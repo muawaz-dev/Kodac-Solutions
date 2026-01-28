@@ -1,5 +1,5 @@
 // Strategic Processes Component - How We Work Section
-'use client';
+
 
 export default function StrategicProcesses() {
   const processes = [

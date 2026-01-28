@@ -1,36 +1,13 @@
 // Contact Page - Contact Form and Information
-'use client';
 
-import { useState } from 'react';
 import type { Metadata } from 'next';
-
+import { PopupWidget } from "react-calendly";
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
 
   return (
-    <main className="min-h-screen bg-white pt-20">
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
+      <section className="pb-20 pt-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Get In <span className="text-red-500">Touch</span>
@@ -40,12 +17,44 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
-
+      <div className="text-center mt-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Schedule Your Service</h2>
+        <p className="text-xl text-gray-600">Book an appointment that fits your schedule.</p>
+      </div>
       {/* Contact Form and Info Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Contact Information */}
+            <div className="App">
+              <section id="booking" className="bg-white">
+                <div className="container mx-auto px-4">
+
+                  <div className="max-w-4xl mx-auto bg-gray-50 rounded-3xl p-8 shadow-xl">
+                    <div className="flex items-center justify-center gap-2 mb-6">
+
+                      <h3 className="text-2xl font-bold text-gray-800">Book Your Appointment</h3>
+                    </div>
+
+                    {/* Calendly Embed */}
+                    <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
+                      <iframe
+                        src="https://calendly.com/muawaz8/30min"
+                        width="100%"
+                        height="700"
+                        frameBorder="0"
+                        title="Schedule Appointment"
+                        className="rounded-2xl"
+                      ></iframe>
+                    </div>
+
+                    <div className="mt-6 text-center text-gray-600">
+                      <p>Can't find a suitable time? Call us at <strong className="text-blue-600">(555) 123-4567</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
             <div className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
@@ -99,126 +108,6 @@ export default function ContactPage() {
                     </a>
                   </div>
                 </div>
-              </div>
-
-              {/* Business Hours */}
-              <div className="bg-gradient-to-br from-red-500 to-purple-600 rounded-xl p-8 text-white">
-                <h3 className="text-2xl font-bold mb-4">Business Hours</h3>
-                <div className="space-y-2">
-                  <p className="flex justify-between">
-                    <span>Monday - Friday:</span>
-                    <span className="font-semibold">9:00 AM - 6:00 PM</span>
-                  </p>
-                  <p className="flex justify-between">
-                    <span>Saturday:</span>
-                    <span className="font-semibold">10:00 AM - 4:00 PM</span>
-                  </p>
-                  <p className="flex justify-between">
-                    <span>Sunday:</span>
-                    <span className="font-semibold">Closed</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Contact Form */}
-            <div>
-              <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
-                
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  {/* Name */}
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                      placeholder="John Doe"
-                    />
-                  </div>
-
-                  {/* Email */}
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                      placeholder="john@example.com"
-                    />
-                  </div>
-
-                  {/* Phone */}
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                      placeholder="+1 (555) 000-0000"
-                    />
-                  </div>
-
-                  {/* Subject */}
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Subject *
-                    </label>
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                      placeholder="How can we help you?"
-                    />
-                  </div>
-
-                  {/* Message */}
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Message *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      rows={6}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent resize-none"
-                      placeholder="Tell us about your project..."
-                    />
-                  </div>
-
-                  {/* Submit Button */}
-                  <button
-                    type="submit"
-                    className="w-full bg-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                  >
-                    Send Message
-                  </button>
-                </form>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 // Digital Excellence Component - Marketing Excellence Section
-'use client';
+
 
 import Image from 'next/image';
 

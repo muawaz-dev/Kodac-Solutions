@@ -14,32 +14,32 @@ export default function GraphicDesigningPage() {
     {
       title: 'Logo & Brand Identity',
       description: 'Create a memorable brand identity with custom logos, color palettes, typography, and brand guidelines that set you apart.',
-      icon: '🎨',
+      icon: '/graphic-designing/logo-design.png',
       features: ['Custom logo design', 'Brand style guides', 'Color palette development', 'Typography selection', 'Brand collateral'],
     },
     {
       title: 'Marketing Materials',
       description: 'Eye-catching designs for brochures, flyers, business cards, and promotional materials that drive engagement.',
-      icon: '📄',
+      icon: '/graphic-designing/marketing-materials.png',
       features: ['Brochure design', 'Business cards', 'Flyers & posters', 'Presentation templates', 'Print-ready files'],
     },
     {
       title: 'Digital Graphics',
       description: 'Engaging graphics for social media, websites, and digital campaigns that capture attention and drive action.',
-      icon: '💻',
+      icon: '/graphic-designing/digital-graphics.png',
       features: ['Social media graphics', 'Banner ads', 'Infographics', 'Email templates', 'Web graphics'],
     },
     {
       title: 'Packaging & Product Design',
       description: 'Stunning packaging and product designs that stand out on shelves and create memorable unboxing experiences.',
-      icon: '📦',
+      icon: '/graphic-designing/product-design.png',
       features: ['Product packaging', 'Label design', '3D mockups', 'Dieline creation', 'Print specifications'],
     },
   ];
 
   return (
-    <main className="min-h-screen bg-white pt-20">
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
+    <main className="min-h-screen bg-white">
+      <section className="pb-20 pt-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -60,7 +60,7 @@ export default function GraphicDesigningPage() {
               </Link>
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
-              <Image src="/services/graphic-design.jpg" alt="Graphic Design" fill className="object-cover" />
+              <Image src="/services/graphic-designing.jpg" alt="Graphic Design" fill className="object-cover" />
             </div>
           </div>
         </div>
@@ -118,7 +118,14 @@ export default function GraphicDesigningPage() {
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow">
-                <div className="text-5xl mb-6">{service.icon}</div>
+                <div className="relative w-16 h-16 mb-2">
+                  <Image
+                    alt={service.title}
+                    src={service.icon}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
                 <ul className="space-y-3">

@@ -1,5 +1,5 @@
 // Footer Component - Site Footer with Links and Contact Info
-'use client';
+
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -102,7 +102,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>Copyright 2024, All Rights Reserved by Kodac Solutions</p>
+          <p>Copyright 2026, All Rights Reserved by Kodac Solutions</p>
         </div>
       </div>
     </footer>

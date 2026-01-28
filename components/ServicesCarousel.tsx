@@ -1,6 +1,6 @@
 // Services Carousel Component - Rotating Services Display
 'use client';
-
+import {Globe,Instagram} from 'lucide-react'
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
@@ -11,13 +11,13 @@ export default function ServicesCarousel() {
     {
       title: 'Web Development',
       description: 'We design websites that reflect your brand, engage visitors, and deliver exceptional performance to drive your business growth effectively.',
-      icon: '🌐',
+      icon: <Globe color="#000000" size={48} />,
       link: '/services/web-development',
     },
     {
       title: 'Social Media Marketing',
       description: 'Elevate your brand with consistent, engaging content and data-driven social media campaigns that connect with your audience and drive results.',
-      icon: '📱',
+      icon: <Instagram color="#000000" size={48} />,
       link: '/services/social-media-marketing',
     },
     {

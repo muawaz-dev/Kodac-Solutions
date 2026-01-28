@@ -9,6 +9,7 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 import TeamPreview from '@/components/TeamPreview';
 import Testimonials from '@/components/Testimonials';
 import Newsletter from '@/components/Newsletter';
+import ServicesList from '@/components/ServicesList';
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <HeroSection />
 
       {/* Services Carousel Section */}
-      <ServicesCarousel />
+      <ServicesList />
 
       {/* Digital Excellence Section */}
       <DigitalExcellence />
@@ -35,7 +36,7 @@ export default function Home() {
       <Testimonials />
 
       {/* Newsletter Section */}
-      <Newsletter />
+      {/* <Newsletter /> */}
     </main>
   );
 }

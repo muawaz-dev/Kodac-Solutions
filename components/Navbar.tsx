@@ -14,7 +14,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 15);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -31,15 +31,14 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg' : 'bg-white'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="w-48 h-12 relative">
+            <div className="w-[150px] h-[80px] relative">
               <Image
                 src="/logo.png"
                 alt="Kodac Solutions Logo"
@@ -54,9 +53,8 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center space-x-8">
             <Link
               href="/"
-              className={`text-base font-medium transition-colors ${
-                pathname === '/' ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
-              }`}
+              className={`text-base font-medium transition-colors ${pathname === '/' ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
+                }`}
             >
               Home
             </Link>
@@ -68,9 +66,8 @@ export default function Navbar() {
               onMouseLeave={() => setIsServicesOpen(false)}
             >
               <button
-                className={`text-base font-medium transition-colors flex items-center ${
-                  pathname.startsWith('/services') ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
-                }`}
+                className={`text-base font-medium transition-colors flex items-center ${pathname.startsWith('/services') ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
+                  }`}
               >
                 Services
                 <svg
@@ -85,7 +82,7 @@ export default function Navbar() {
 
               {/* Dropdown Menu */}
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl py-2 border border-gray-100">
+                <div className="absolute top-full left-0 w-64 bg-white rounded-lg shadow-xl py-2 border border-gray-100">
                   {services.map((service) => (
                     <Link
                       key={service.href}
@@ -101,18 +98,16 @@ export default function Navbar() {
 
             <Link
               href="/about"
-              className={`text-base font-medium transition-colors ${
-                pathname === '/about' ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
-              }`}
+              className={`text-base font-medium transition-colors ${pathname === '/about' ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
+                }`}
             >
               About
             </Link>
 
             <Link
               href="/contact"
-              className={`text-base font-medium transition-colors ${
-                pathname === '/contact' ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
-              }`}
+              className={`text-base font-medium transition-colors ${pathname === '/contact' ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
+                }`}
             >
               Contact Us
             </Link>
@@ -121,7 +116,11 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             className="lg:hidden p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            onClick={() => {
+              setIsMobileMenuOpen(!isMobileMenuOpen)
+              setIsScrolled(true)
+            }
+            }
           >
             <svg
               className="w-6 h-6 text-gray-700"
@@ -145,14 +144,16 @@ export default function Navbar() {
               <Link
                 href="/"
                 className="text-base font-medium text-gray-700 hover:text-red-500"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(!isMobileMenuOpen)
+                }}
               >
                 Home
               </Link>
 
               <div>
                 <button
-                  onClick={() => setIsServicesOpen(!isServicesOpen)}
+                  onClick={() => setIsServicesOpen(true)}
                   className="text-base font-medium text-gray-700 hover:text-red-500 flex items-center w-full"
                 >
                   Services
@@ -173,7 +174,12 @@ export default function Navbar() {
                         key={service.href}
                         href={service.href}
                         className="block text-sm text-gray-600 hover:text-red-500"
-                        onClick={() => setIsMobileMenuOpen(false)}
+                        onClick={() => {
+                          setIsMobileMenuOpen(false)
+                          
+                          setIsServicesOpen(!isServicesOpen)
+                        }
+                        }
                       >
                         {service.name}
                       </Link>
@@ -185,7 +191,10 @@ export default function Navbar() {
               <Link
                 href="/about"
                 className="text-base font-medium text-gray-700 hover:text-red-500"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(!isMobileMenuOpen)
+                  
+                }}
               >
                 About
               </Link>
@@ -193,7 +202,10 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 className="text-base font-medium text-gray-700 hover:text-red-500"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(!isMobileMenuOpen)
+                  
+                }}
               >
                 Contact Us
               </Link>

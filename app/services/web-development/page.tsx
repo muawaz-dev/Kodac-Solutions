@@ -14,7 +14,7 @@ export default function WebDevelopmentPage() {
     {
       title: 'Shopify Development',
       description: 'Build powerful e-commerce stores with Shopify. From custom themes to app integrations, we create online stores that convert visitors into customers.',
-      icon: '🛍️',
+      icon: '/web-dev/shopify.png',
       features: [
         'Custom Shopify themes',
         'Payment gateway integration',
@@ -26,7 +26,7 @@ export default function WebDevelopmentPage() {
     {
       title: 'WordPress Development',
       description: 'Create flexible, scalable websites with WordPress. Perfect for blogs, business sites, and content-rich platforms with easy content management.',
-      icon: '📝',
+      icon: '/web-dev/wordpress.png',
       features: [
         'Custom WordPress themes',
         'Plugin development & integration',
@@ -38,7 +38,7 @@ export default function WebDevelopmentPage() {
     {
       title: 'Custom Code Development',
       description: 'Build unique, high-performance web applications with modern technologies. Tailored solutions that meet your specific business requirements.',
-      icon: '⚙️',
+      icon: '/web-dev/custom-code.png',
       features: [
         'React, Next.js, Vue.js',
         'Progressive Web Apps (PWA)',
@@ -78,9 +78,9 @@ export default function WebDevelopmentPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-white pt-20">
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
+      <section className="pb-20 pt-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -212,10 +212,18 @@ export default function WebDevelopmentPage() {
           <div className="grid lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow">
-                <div className="text-5xl mb-6">{service.icon}</div>
+                <div className="relative w-16 h-16 mb-2">
+                  <Image
+                    alt={service.title}
+                    src={service.icon}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
-                
+
                 <ul className="space-y-3">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">

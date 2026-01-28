@@ -48,9 +48,9 @@ export default function AboutPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-white pt-20">
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
+      <section className="pb-20 pt-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             About <span className="text-red-500">Kodac Solutions</span>

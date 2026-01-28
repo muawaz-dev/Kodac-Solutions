@@ -1,5 +1,5 @@
 // Why Choose Us Component - Expertise Section (No Numbers for New Agency)
-'use client';
+
 
 export default function WhyChooseUs() {
   return (
@@ -9,7 +9,7 @@ export default function WhyChooseUs() {
           {/* Left Content - Decorative Card */}
           <div className="relative">
             <div className="bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 rounded-3xl p-12 shadow-2xl">
-              <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-blue-400 to-cyan-300 rounded-full opacity-50 -translate-x-8 -translate-y-8"></div>
+              <div className="sm:block hidden absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-blue-400 to-cyan-300 rounded-full opacity-50 -translate-x-8 -translate-y-8"></div>
               
               <div className="relative space-y-12">
                 {/* Expertise Icon */}
@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
                 </div>
               </div>
 
-              <div className="absolute bottom-0 right-0 w-40 h-40 bg-gradient-to-br from-yellow-300 to-orange-400 rounded-full opacity-30 translate-x-12 translate-y-12"></div>
+              <div className="sm:block hidden absolute bottom-0 right-0 w-40 h-40 bg-gradient-to-br from-yellow-300 to-orange-400 rounded-full opacity-30 translate-x-12 translate-y-12"></div>
             </div>
           </div>
 
