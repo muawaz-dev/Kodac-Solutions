@@ -26,7 +26,7 @@ export default function ProductivityToolsPage() {
 
   const packs = [
     {
-      name: "AI Pack",
+      name: "Starter A.I Pack",
       description: "Perfect for creators that want to utilize the power of AI.",
       tools: [
         { name: "Chatgpt Plus", logo: "/productivity-tools/chat-gpt.png" },
@@ -47,7 +47,7 @@ export default function ProductivityToolsPage() {
       price: "39.99$"
     },
     {
-      name: "Graphic Design",
+      name: "Graphic Designing Pack",
       description: "Perfect for designers.",
       tools: [
         { name: "Chatgpt Plus", logo: "/productivity-tools/chat-gpt.png" },
@@ -57,7 +57,7 @@ export default function ProductivityToolsPage() {
       price: "29.99$"
     },
     {
-      name: "All In One AI",
+      name: "All In One A.I Pack",
       description: "Perfect for creators that want to maximize their potential with AI.",
       tools: [
         { name: "Chatgpt Plus", logo: "/productivity-tools/chat-gpt.png" },
@@ -66,7 +66,7 @@ export default function ProductivityToolsPage() {
         { name: "Eleven Labs", logo: "/productivity-tools/eleven-labs.png" },
         { name: "Heygen", logo: "/productivity-tools/heygen.png" },
       ],
-      price: "29.99$"
+      price: "39.99$"
     }
   ]
 
