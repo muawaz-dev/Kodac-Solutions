@@ -9,13 +9,66 @@ export const metadata = {
 
 export default function ProductivityToolsPage() {
   const tools = [
-    { name: 'Notion', logo: '/tools/notion-placeholder.png', category: 'Project Management' },
-    { name: 'Zapier', logo: '/tools/zapier-placeholder.png', category: 'Automation' },
-    { name: 'Slack', logo: '/tools/slack-placeholder.png', category: 'Communication' },
-    { name: 'Airtable', logo: '/tools/airtable-placeholder.png', category: 'Database' },
-    { name: 'Asana', logo: '/tools/asana-placeholder.png', category: 'Task Management' },
-    { name: 'Monday.com', logo: '/tools/monday-placeholder.png', category: 'Work OS' },
+    { "name": "Capcut Pro", "logo": "/productivity-tools/capcut.png", "category": "Video-Editing", "price": "9.99$", "oldPrice": "12.99$" },
+    { "name": "Chatgpt Plus", "logo": "/productivity-tools/chat-gpt.png", "category": "Automation", "price": "9.99$", "oldPrice": "20$" },
+    { "name": "Sora 2", "logo": "/productivity-tools/sora-2.png", "category": "Automation", "price": "9.99$", "oldPrice": "34.90$" },
+    { "name": "Veo 3", "logo": "/productivity-tools/veo-3.png", "category": "Database", "price": "10.99$", "oldPrice": "30$" },
+    { "name": "Canva Pro", "logo": "/productivity-tools/canva.png", "category": "Graphic Design", "price": "10.99$", "oldPrice": "20$" },
+    { "name": "Adobe Creative Cloud", "logo": "/productivity-tools/adobe.png", "category": "Creativity", "price": "35$", "oldPrice": "20$" },
+    { "name": "Eleven Labs", "logo": "/productivity-tools/eleven-labs.png", "category": "Automation", "price": "15$", "oldPrice": "20$" },
+    { "name": "Heygen", "logo": "/productivity-tools/heygen.png", "category": "Automation", "price": "15.99$", "oldPrice": "20$" },
+    { "name": "Leonardo AI", "logo": "/productivity-tools/leonardo.png", "category": "Automation", "price": "10.99$", "oldPrice": "20$" },
+    { "name": "Claude Code", "logo": "/productivity-tools/claude.png", "category": "Automation", "price": "20$", "oldPrice": "20$" },
+    { "name": "Hailuo", "logo": "/productivity-tools/hailuo.png", "category": "Automation", "price": "25$", "oldPrice": "25$" },
+    { "name": "Envato Elements", "logo": "/productivity-tools/envato.png", "category": "Design", "price": "15$", "oldPrice": "15$" },
+    { "name": "Freepic", "logo": "/productivity-tools/freepik.png", "category": "Automation", "price": "15$", "oldPrice": "15$" }
   ];
+
+  const packs = [
+    {
+      name: "AI Pack",
+      description: "Perfect for creators that want to utilize the power of AI.",
+      tools: [
+        { name: "Chatgpt Plus", logo: "/productivity-tools/chat-gpt.png" },
+        { name: "Capcut Pro", logo: "/productivity-tools/capcut.png" },
+        { name: "Leonardo AI", logo: "/productivity-tools/leonardo.png" },
+        { name: "Veo 3", logo: "/productivity-tools/veo-3.png" }
+      ],
+      price: "29.99$"
+    },
+    {
+      name: "Video Editing Pack",
+      description: "Perfect for video editors.",
+      tools: [
+        { name: "Adobe Creative Cloud", logo: "/productivity-tools/adobe.png" },
+        { name: "Envanto Elements", logo: "/productivity-tools/envato.png" },
+        { name: "Freepik", logo: "/productivity-tools/freepik.png" }
+      ],
+      price: "39.99$"
+    },
+    {
+      name: "Graphic Design",
+      description: "Perfect for designers.",
+      tools: [
+        { name: "Chatgpt Plus", logo: "/productivity-tools/chat-gpt.png" },
+        { name: "Canva Pro", logo: "/productivity-tools/canva.png" },
+        { name: "Leonardo AI", logo: "/productivity-tools/leonardo.png" }
+      ],
+      price: "29.99$"
+    },
+    {
+      name: "All In One AI",
+      description: "Perfect for creators that want to maximize their potential with AI.",
+      tools: [
+        { name: "Chatgpt Plus", logo: "/productivity-tools/chat-gpt.png" },
+        { name: "Sora 2", logo: "/productivity-tools/sora-2.png" },
+        { name: "Leonardo AI", logo: "/productivity-tools/leonardo.png" },
+        { name: "Eleven Labs", logo: "/productivity-tools/eleven-labs.png" },
+        { name: "Heygen", logo: "/productivity-tools/heygen.png" },
+      ],
+      price: "29.99$"
+    }
+  ]
 
   return (
     <main className="min-h-screen bg-white">
@@ -35,7 +88,7 @@ export default function ProductivityToolsPage() {
         </div>
       </section>
 
-      <section className="py-12 px-4 sm:px-6 lg:px-8">
+      <section className="pt-12 pb-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">What We Offer</h2>
@@ -44,16 +97,87 @@ export default function ProductivityToolsPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="pb-20 pt-8 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(15rem,1fr))] gap-4 justify-items-center">
             {tools.map((tool, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center justify-center">
-                <div className="w-20 h-20 bg-gray-200 rounded-lg mb-3 flex items-center justify-center">
-                  <span className="text-3xl">🔧</span>
+              <div key={i} className="bg-white rounded-xl w-60 p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center justify-center">
+                <div className="w-20 h-20 rounded-lg mb-3 flex items-center justify-center">
+                  <div className="relative w-16 h-16 mb-2">
+                    <Image
+                      alt={tool.name}
+                      src={tool.logo}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
-                <h3 className="font-bold text-gray-900 text-center">{tool.name}</h3>
+                <h3 className="font-bold text-lg text-gray-900 text-center">{tool.name}</h3>
                 <p className="text-sm text-gray-500 text-center">{tool.category}</p>
+                <div className='flex gap-2'>
+                  {/* <p className="text-sm text-gray-500 line-through decoration-red-500 text-center">{tool.oldPrice}</p> */}
+                  <p className="text-sm text-gray-500 text-center">{tool.price}</p>
+
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-12 pb-4 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Special Packs</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Get specialized packs for your specific needs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="pb-20 pt-8 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 py-10">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(25rem,1fr))] gap-8">
+            {packs.map((pack, index) => (
+              <div
+                key={index}
+                className="w-full bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col gap-4 p-6 border border-gray-200"
+              >
+                {/* Title */}
+                <h3 className="font-bold text-2xl text-gray-900 text-center">
+                  {pack.name}
+                </h3>
+
+                {/* Price */}
+                <div className="text-lg font-semibold text-black text-center">
+                  {pack.price}
+                </div>
+
+                {/* Description */}
+                <div className="text-sm text-gray-600 text-center">
+                  {pack.description}
+                </div>
+
+                {/* Tools list */}
+                <div className="flex flex-wrap justify-center gap-2 mt-4">
+                  {pack.tools.map((tool, i) => (
+                    <span
+                      key={i}
+                      className="px-3 flex gap-2 items-center py-1 text-sm bg-indigo-50 text-indigo-700 rounded-full border border-indigo-200"
+                    >
+                      <div className="relative w-4 h-4">
+                        <Image
+                          alt={tool.name}
+                          src={tool.logo}
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                      <div>
+                      {tool.name}
+                      </div>
+                    </span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>

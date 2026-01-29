@@ -8,9 +8,9 @@ export default function HeroSection() {
   return (
     <section className="relative pt-20 px-4 bg-no-repeat bg-[url('/test.png')] sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-4 items-center">
+        <div className="grid lg:grid-cols-2 gap-4">
           {/* Left Content */}
-          <div className="space-y-8 lg:pt-0 pt-16 lg:pl-12">
+          <div className="space-y-8 pt-12 lg:pl-12">
             <h1 className="text-5xl md:text-7xl text-black flex flex-col items-center xl:text-8xl font-bold leading-tight">
               Development
               <br />
@@ -41,7 +41,7 @@ export default function HeroSection() {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M50 300 Q 200 150 350 300 T 350 500 T 350 700"
+                d="M50 300 Q 200 150 350 300 T 350 500 T 550 1700"
                 stroke="#9CA3AF
 "
                 strokeWidth="7"

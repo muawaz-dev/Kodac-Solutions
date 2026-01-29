@@ -7,28 +7,28 @@ import Link from 'next/link';
 export default function TeamPreview() {
   const teamMembers = [
     {
-      name: 'Wajahat Laeeq',
+      name: 'Frasat Ahmad',
       role: 'CEO',
       image: '/team/wajahat.jpg',
     },
     {
-      name: 'Dalton Grant',
-      role: 'Project Manager',
+      name: 'Muawaz Ahmad',
+      role: 'Full-Stack Developer',
       image: '/team/dalton.jpg',
     },
     {
-      name: 'Ryan Ricketts',
-      role: 'Director',
+      name: 'Irbaz Hassan',
+      role: 'Creative Director',
       image: '/team/ryan.jpg',
     },
     {
-      name: 'Pulak Nondi',
-      role: 'Project Manager',
+      name: 'Mayer Shiraz',
+      role: 'Graphic Designer',
       image: '/team/pulak.jpg',
     },
     {
-      name: 'Alex Nondi',
-      role: 'Marketing',
+      name: 'Musawir Ali',
+      role: 'Lead Generation Specialist',
       image: '/team/alex.jpg',
     },
   ];

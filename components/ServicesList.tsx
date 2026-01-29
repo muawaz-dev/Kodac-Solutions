@@ -122,7 +122,7 @@ export default function ServicesList() {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br sm:bg-gradient-to-r from-[#E9E8FD] sm:from-[#da1402] via-[#E9E8FD] to-[#da1402] sm:to-[#9050F0] rounded-[2.5rem] my-8">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br sm:bg-gradient-to-r from-[#E9E8FD] sm:from-[#da1402] via-[#E9E8FD] to-[#da1402] sm:to-[#9050F0] rounded-[2.5rem] mb-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">

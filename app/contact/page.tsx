@@ -1,7 +1,6 @@
 // Contact Page - Contact Form and Information
 
 import type { Metadata } from 'next';
-import { PopupWidget } from "react-calendly";
 export default function ContactPage() {
 
   return (

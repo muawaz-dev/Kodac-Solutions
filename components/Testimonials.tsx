@@ -33,7 +33,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 via-purple-600 to-red-500">
+    <section className="py-20 sm:pb-4  px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 via-purple-600 to-red-500">
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -64,7 +64,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonial Content */}
-        <div className="relative min-h-[300px]">
+        <div className="relative min-h-[350px]">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}

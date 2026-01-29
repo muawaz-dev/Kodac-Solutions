@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Kodac Solutions - Digital Services Agency | Web Development, Marketing & Design',
-  description: 'Empowering businesses with expert website development, digital marketing, SEO, video editing, graphic design, and social media strategies to dominate the digital landscape.',
+  description: 'Empowering businesses with expert website development, digital marketing, video editing, graphic design, and social media strategies to dominate the digital landscape.',
   keywords: 'web development, digital marketing, SEO, social media marketing, video editing, graphic design, Meta ads, productivity tools, agency services',
 };
 
@@ -20,10 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preload" href="https://calendly.com/muawaz8/30min" as="document" />
+        <link rel="icon" type="image/png" href="/logo-tab.png" />
+      </head>
       <body className={inter.className}>
-          <Navbar />
-          {children}
-          <Footer />
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );

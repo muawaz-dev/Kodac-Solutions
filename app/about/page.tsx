@@ -11,36 +11,36 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const teamMembers = [
     {
-      name: 'Wajahat Laeeq',
-      role: 'CEO & Founder',
+      name: 'Frasat Ahmad',
+      role: 'CEO',
       image: '/team/wajahat.jpg',
       expertise: 'Strategic Planning, Business Development, Client Relations',
-      description: 'With a vision to revolutionize digital services, Wajahat leads our team with passion and innovative thinking. His expertise in strategic planning ensures every project aligns with client goals.',
+      description: 'With a vision to revolutionize digital services, Frasat leads our team with passion and innovative thinking. His expertise in strategic planning ensures every project aligns with client goals.',
     },
     {
-      name: 'Dalton Grant',
-      role: 'Project Manager',
+      name: 'Muawaz Ahmad',
+      role: 'Full-Stack Developer',
       image: '/team/dalton.jpg',
-      expertise: 'Project Management, Agile Methodologies, Team Coordination',
-      description: 'Dalton ensures seamless project execution from start to finish. His meticulous attention to detail and excellent communication skills keep projects on track and clients satisfied.',
+      expertise: 'Frontend & Backend Development, API Integration, No Code Development',
+      description: 'Muawaz is a versatile full-stack developer who bridges the gap between frontend design and backend functionality, he delivers scalable and efficient solutions.',
     },
     {
-      name: 'Ryan Ricketts',
+      name: 'Irbaz Hassan',
       role: 'Creative Director',
       image: '/team/ryan.jpg',
       expertise: 'Creative Strategy, Brand Development, Design Leadership',
-      description: 'Ryan brings creative vision to life, leading our design team to create stunning visual identities that resonate with audiences and elevate brands.',
+      description: 'Irbaz brings creative vision to life, leading our design team to create stunning visual identities that resonate with audiences and elevate brands.',
     },
     {
-      name: 'Pulak Nondi',
-      role: 'Technical Project Manager',
-      image: '/team/pulak.jpg',
-      expertise: 'Technical Architecture, Development Management, Quality Assurance',
-      description: 'Pulak bridges the gap between technical complexity and project delivery, ensuring robust solutions that meet the highest standards of quality and performance.',
+      name: 'Mayer Shiraz',
+      role: 'Graphic Designer',
+      image: '/team/mayer.jpg',
+      expertise: 'Brand Identity, Visual Design, Typography, Creative Illustration',
+      description: 'Mayer transforms concepts into compelling visuals that elevate brand presence and communication. His strong eye for detail and mastery of design tools ensure every project delivers creativity, clarity, and impact.',
     },
     {
-      name: 'Alex Nondi',
-      role: 'Marketing Specialist',
+      name: 'Musawir Ali',
+      role: 'Lead Generation Specialist',
       image: '/team/alex.jpg',
       expertise: 'Digital Marketing, SEO/SEM, Social Media Strategy, Analytics',
       description: 'Alex crafts data-driven marketing strategies that drive results. Her expertise in SEO, social media, and analytics helps businesses grow their online presence effectively.',
@@ -151,14 +151,12 @@ export default function AboutPage() {
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className={`grid lg:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? 'lg:grid-flow-dense' : ''
-                }`}
+                className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''
+                  }`}
               >
                 {/* Image */}
-                <div className={`relative h-96 rounded-2xl overflow-hidden shadow-2xl ${
-                  index % 2 === 1 ? 'lg:col-start-2' : ''
-                }`}>
+                <div className={`relative h-96 rounded-2xl overflow-hidden shadow-2xl ${index % 2 === 1 ? 'lg:col-start-2' : ''
+                  }`}>
                   <Image
                     src={member.image}
                     alt={member.name}
