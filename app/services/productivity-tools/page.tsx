@@ -109,6 +109,7 @@ export default function ProductivityToolsPage() {
                       src={tool.logo}
                       fill
                       className="object-contain"
+                      loading='eager'
                     />
                   </div>
                 </div>

@@ -20,7 +20,7 @@ export default function AdCampaignsPage() {
               <Link href="/contact" className="inline-block bg-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-600 transition-colors shadow-lg">Launch Your Campaign</Link>
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
-              <Image src="/services/ad-campaigns.jpeg" alt="Ad Campaigns" fill className="object-cover" />
+              <Image loading='eager' src="/services/ad-campaigns.jpeg" alt="Ad Campaigns" fill className="object-cover" />
             </div>
           </div>
         </div>

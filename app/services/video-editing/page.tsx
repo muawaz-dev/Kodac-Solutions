@@ -91,6 +91,7 @@ export default function VideoEditingPage() {
                 alt="Video Editing"
                 fill
                 className="object-cover"
+                loading='eager'
               />
             </div>
           </div>

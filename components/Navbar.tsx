@@ -37,7 +37,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link
+            href="/"
+            className="flex items-center">
             <div className="w-[150px] h-[80px] relative">
               <Image
                 src="/logo.png"
@@ -85,6 +87,7 @@ export default function Navbar() {
                 <div className="absolute top-full left-0 w-64 bg-white rounded-lg shadow-xl py-2 border border-gray-100">
                   {services.map((service) => (
                     <Link
+                      onClick={() => setIsServicesOpen(false)}
                       key={service.href}
                       href={service.href}
                       className="block px-4 py-3 text-sm text-gray-700 hover:bg-red-50 hover:text-red-500 transition-colors"
@@ -176,7 +179,7 @@ export default function Navbar() {
                         className="block text-sm text-gray-600 hover:text-red-500"
                         onClick={() => {
                           setIsMobileMenuOpen(false)
-                          
+
                           setIsServicesOpen(!isServicesOpen)
                         }
                         }
@@ -193,7 +196,7 @@ export default function Navbar() {
                 className="text-base font-medium text-gray-700 hover:text-red-500"
                 onClick={() => {
                   setIsMobileMenuOpen(!isMobileMenuOpen)
-                  
+
                 }}
               >
                 About
@@ -204,7 +207,7 @@ export default function Navbar() {
                 className="text-base font-medium text-gray-700 hover:text-red-500"
                 onClick={() => {
                   setIsMobileMenuOpen(!isMobileMenuOpen)
-                  
+
                 }}
               >
                 Contact Us

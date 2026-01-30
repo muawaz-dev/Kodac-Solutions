@@ -60,7 +60,7 @@ export default function GraphicDesigningPage() {
               </Link>
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
-              <Image src="/services/graphic-designing.jpg" alt="Graphic Design" fill className="object-cover" />
+              <Image loading='eager' src="/services/graphic-designing.jpg" alt="Graphic Design" fill className="object-cover" />
             </div>
           </div>
         </div>

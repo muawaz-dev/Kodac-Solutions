@@ -40,10 +40,10 @@ export default function WebDevelopmentPage() {
       description: 'Build unique, high-performance web applications with modern technologies. Tailored solutions that meet your specific business requirements.',
       icon: '/web-dev/custom-code.png',
       features: [
-        'React, Next.js, Vue.js',
-        'Progressive Web Apps (PWA)',
+        'React, Next.js, Express.js',
+        'Custom animated designs',
         'API development & integration',
-        'Custom CMS solutions',
+        'Performance centric',
         'Scalable architecture',
       ],
     },
@@ -107,6 +107,7 @@ export default function WebDevelopmentPage() {
                 alt="Web Development"
                 fill
                 className="object-cover"
+                loading='eager'
               />
             </div>
           </div>
@@ -218,6 +219,7 @@ export default function WebDevelopmentPage() {
                     src={service.icon}
                     fill
                     className="object-contain"
+                    loading='eager'
                   />
                 </div>
 

@@ -56,6 +56,7 @@ export default function HeroSection() {
                 alt="Digital Marketing Team"
                 fill
                 className="object-cover"
+                loading='eager'
               />
             </div>
 
@@ -66,6 +67,7 @@ export default function HeroSection() {
                 alt="Development Team"
                 fill
                 className="object-cover"
+                loading='eager'
               />
             </div>
           </div>

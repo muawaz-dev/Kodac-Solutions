@@ -20,7 +20,7 @@ export default function SocialMediaMarketingPage() {
               <Link href="/contact" className="inline-block bg-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-600 transition-colors shadow-lg">Start Your Campaign</Link>
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
-              <Image src="/services/social-media.webp" alt="Social Media Marketing" fill className="object-cover" />
+              <Image loading='eager' src="/services/social-media.webp" alt="Social Media Marketing" fill className="object-cover" />
             </div>
           </div>
         </div>

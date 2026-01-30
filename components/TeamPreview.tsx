@@ -5,33 +5,33 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function TeamPreview() {
-  const teamMembers = [
-    {
-      name: 'Frasat Ahmad',
-      role: 'CEO',
-      image: '/team/wajahat.jpg',
-    },
-    {
-      name: 'Muawaz Ahmad',
-      role: 'Full-Stack Developer',
-      image: '/team/dalton.jpg',
-    },
-    {
-      name: 'Irbaz Hassan',
-      role: 'Creative Director',
-      image: '/team/ryan.jpg',
-    },
-    {
-      name: 'Mayer Shiraz',
-      role: 'Graphic Designer',
-      image: '/team/pulak.jpg',
-    },
-    {
-      name: 'Musawir Ali',
-      role: 'Lead Generation Specialist',
-      image: '/team/alex.jpg',
-    },
-  ];
+const teamMembers = [
+  {
+    name: 'Frasat Ahmad',
+    role: 'CEO',
+    description: 'Frasat leads our team with passion and innovative thinking. His strategic planning ensures projects align with client goals.',
+  },
+  {
+    name: 'Muawaz Ahmad',
+    role: 'Full-Stack Developer',
+    description: 'Muawaz bridges frontend design and backend functionality, delivering scalable and efficient solutions.',
+  },
+  {
+    name: 'Irbaz Hassan',
+    role: 'Creative Director',
+    description: 'Irbaz brings creative vision to life, guiding our design team to create stunning visual identities.',
+  },
+  {
+    name: 'Mayer Shiraz',
+    role: 'Graphic Designer',
+    description: 'Mayer transforms concepts into compelling visuals with a strong eye for detail and mastery of design tools.',
+  },
+  {
+    name: 'Musawir Ali',
+    role: 'Lead Generation Specialist',
+    description: 'Musawir crafts data-driven marketing strategies that drive results and help businesses grow online.',
+  },
+];
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
@@ -51,25 +51,21 @@ export default function TeamPreview() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+              className="group relative bg-gray-200 overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               {/* Image Container */}
-              <div className="relative h-96 bg-gray-200">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
-              </div>
-
-              {/* Member Info */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-2xl font-bold mb-1">{member.name}</h3>
-                <p className="text-gray-300">{member.role}</p>
+              <div className="p-4 ">
+                <div className={index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}>
+                  <div className="inline-block bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    {member.role}
+                  </div>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                    {member.name}
+                  </h3>
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    {member.description}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
