@@ -81,7 +81,7 @@ export default function WebDevelopmentPage() {
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="pb-20 pt-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -108,6 +108,10 @@ export default function WebDevelopmentPage() {
                 fill
                 className="object-cover"
                 loading='eager'
+                fetchPriority='high'
+                sizes="(max-width: 768px) 100vw,
+         (max-width: 1200px) 50vw,
+         1172px"
               />
             </div>
           </div>
@@ -116,7 +120,7 @@ export default function WebDevelopmentPage() {
 
       {/* Our Approach */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Approach</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -202,7 +206,7 @@ export default function WebDevelopmentPage() {
 
       {/* Our Services */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Web Development Services</h2>
             <p className="text-xl text-gray-600">
@@ -244,7 +248,7 @@ export default function WebDevelopmentPage() {
 
       {/* Development Process */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Development Process</h2>
             <p className="text-xl text-gray-600">

@@ -40,7 +40,7 @@ export default function GraphicDesigningPage() {
   return (
     <main className="min-h-screen bg-white">
       <section className="pb-20 pt-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -60,14 +60,23 @@ export default function GraphicDesigningPage() {
               </Link>
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
-              <Image loading='eager' src="/services/graphic-designing.jpg" alt="Graphic Design" fill className="object-cover" />
+              <Image
+                loading='eager'
+                src="/services/graphic-designing.jpg"
+                alt="Graphic Design"
+                fill
+                className="object-cover"
+                fetchPriority='high'
+                sizes="(max-width: 768px) 100vw,
+         (max-width: 1200px) 50vw,
+         1172px" />
             </div>
           </div>
         </div>
       </section>
 
       <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Design Approach</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -110,7 +119,7 @@ export default function GraphicDesigningPage() {
       </section>
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Design Services</h2>
             <p className="text-xl text-gray-600">Comprehensive graphic design solutions for every need</p>

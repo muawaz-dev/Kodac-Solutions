@@ -7,7 +7,7 @@ import Image from 'next/image';
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-375 mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2 space-y-6">
@@ -20,13 +20,14 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 max-w-md">
-              Empowering businesses with expert website development, digital marketing, SEO, and social media strategies to dominate the digital landscape.
+              Empowering businesses with expert website development, digital marketing, and social media strategies to dominate the digital landscape.
             </p>
             {/* Social Links */}
             <div className="flex space-x-4">
               <a
                 href="https://facebook.com"
                 target="_blank"
+                aria-label="Visit our Facebook page"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors"
               >
@@ -37,6 +38,7 @@ export default function Footer() {
               <a
                 href="https://twitter.com"
                 target="_blank"
+                aria-label="Visit our Twitter page"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors"
               >
@@ -47,6 +49,7 @@ export default function Footer() {
               <a
                 href="https://linkedin.com"
                 target="_blank"
+                aria-label="Visit our LinkedIn page"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors"
               >

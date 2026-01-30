@@ -4,7 +4,7 @@
 export default function WhyChooseUs() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-purple-50">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-360 mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content - Decorative Card */}
           <div className="relative">

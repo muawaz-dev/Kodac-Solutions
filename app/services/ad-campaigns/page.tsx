@@ -11,7 +11,7 @@ export default function AdCampaignsPage() {
   return (
     <main className="min-h-screen bg-white">
       <section className="pb-20 pt-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">Ad Campaigns</div>
@@ -20,19 +20,28 @@ export default function AdCampaignsPage() {
               <Link href="/contact" className="inline-block bg-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-600 transition-colors shadow-lg">Launch Your Campaign</Link>
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
-              <Image loading='eager' src="/services/ad-campaigns.jpeg" alt="Ad Campaigns" fill className="object-cover" />
+              <Image
+                loading='eager'
+                src="/services/ad-campaigns.jpeg"
+                alt="Ad Campaigns"
+                fill
+                className="object-cover"
+                fetchPriority='high'
+                sizes="(max-width: 768px) 100vw,
+         (max-width: 1200px) 50vw,
+         1172px" />
             </div>
           </div>
         </div>
       </section>
 
       <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center mb-16">
+        <div className="max-w-360 mx-auto text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Advertising Services</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">We specialize in creating and managing high-performing ad campaigns that deliver measurable results and maximize your advertising budget.</p>
         </div>
 
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
+        <div className="max-w-360 mx-auto grid md:grid-cols-2 gap-8">
           {[
             { title: 'Meta Ads (Facebook & Instagram)', features: ['Audience targeting', 'Creative development', 'A/B testing', 'Conversion tracking', 'Retargeting campaigns'], icon: '/ad-campaigns/meta.png' },
             { title: 'Google Ads', features: ['Search campaigns', 'Display advertising', 'Shopping ads', 'YouTube advertising', 'Remarketing'], icon: '/ad-campaigns/google.png' },

@@ -43,7 +43,7 @@ export default function ServicesList() {
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br sm:bg-gradient-to-r from-[#E9E8FD] sm:from-[#da1402] via-[#E9E8FD] to-[#da1402] sm:to-[#9050F0] rounded-[2.5rem] mb-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-360 mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-red-500 font-bold text-sm uppercase tracking-wider mb-3">
@@ -63,13 +63,14 @@ export default function ServicesList() {
               <div className="group relative bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
                 {/* Icon Container */}
                 <div className="mb-6 flex items-center justify-between">
-                  <div className="relative h-12 w-12 rounded-2xl overflow-hidden">
+                  <div className="relative h-13 w-13 rounded-2xl overflow-hidden">
                     <Image
                       src={service.icon}
                       alt="Web Development"
                       fill
                       className="object-cover"
                       loading='eager'
+                      sizes='78px'
                     />
                   </div>
 

@@ -35,7 +35,7 @@ const teamMembers = [
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-360 mx-auto">
         {/* Section Header */}
         <div className="mb-16">
           <p className="text-red-500 font-semibold text-sm uppercase tracking-wide mb-2">

@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function DigitalExcellence() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-360 mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-12 text-white space-y-8">
@@ -56,6 +56,7 @@ export default function DigitalExcellence() {
               alt="Digital Marketing Team"
               fill
               className="object-cover"
+              loading='eager'
             />
           </div>
         </div>

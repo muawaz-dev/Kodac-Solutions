@@ -9,7 +9,7 @@ export default function Testimonials() {
   const testimonials = [
     {
       quote: "Working with this team was a game-changer for our online presence. They helped us redesign our website and improve our search rankings, resulting in a significant increase in traffic and leads.",
-      author: "Sarah L",
+      author: "Sarah",
       position: "Business Owner",
     },
     {

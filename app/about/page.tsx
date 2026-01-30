@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'About Us - Kodac Solutions | Young, Passionate Digital Experts',
   description: 'Meet the young, energetic team behind Kodac Solutions. We are passionate digital experts dedicated to delivering modern, innovative solutions for your business.',
-  keywords: 'about us, digital agency team, web developers, marketing experts, young professionals',
+  keywords: 'about us, digital agency team, graphic designers, seo, web developers, marketing experts, young professionals',
 };
 
 export default function AboutPage() {
@@ -13,14 +13,14 @@ export default function AboutPage() {
     {
       name: 'Frasat Ahmad',
       role: 'CEO',
-      image: '/team/wajahat.jpg',
+      image: '/team/frasat.png',
       expertise: 'Strategic Planning, Business Development, Client Relations',
       description: 'With a vision to revolutionize digital services, Frasat leads our team with passion and innovative thinking. His expertise in strategic planning ensures every project aligns with client goals.',
     },
     {
       name: 'Muawaz Ahmad',
       role: 'Full-Stack Developer',
-      image: '/team/dalton.jpg',
+      image: '/team/muawaz.png',
       expertise: 'Frontend & Backend Development, API Integration, No Code Development',
       description: 'Muawaz is a versatile full-stack developer who bridges the gap between frontend design and backend functionality, he delivers scalable and efficient solutions.',
     },
@@ -51,7 +51,7 @@ export default function AboutPage() {
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="pb-20 pt-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-360 mx-auto text-center">
           <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             About <span className="text-red-500">Kodac Solutions</span>
           </h1>
@@ -63,7 +63,7 @@ export default function AboutPage() {
 
       {/* Our Story Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-4xl font-bold text-gray-900">Our Story</h2>
@@ -89,7 +89,7 @@ export default function AboutPage() {
 
       {/* What Makes Us Different */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">
             What Makes Us Different
           </h2>
@@ -139,7 +139,7 @@ export default function AboutPage() {
 
       {/* Full Team Section */}
       <section id="team" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
             <p className="text-xl text-gray-600">
@@ -155,14 +155,17 @@ export default function AboutPage() {
                   }`}
               >
                 {/* Image */}
-                <div className={`relative h-96 rounded-2xl overflow-hidden shadow-2xl ${index % 2 === 1 ? 'lg:col-start-2' : ''
+                <div className={`flex justify-center bg-gradient-to-r from-gray-700 to-gray-300 items-center h-96 rounded-2xl overflow-hidden shadow-2xl ${index % 2 === 1 ? 'lg:col-start-2' : ''
                   }`}>
+                    <div className='h-72 w-72 relative bg-[#F7F7F7] rounded-2xl'>
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover"
+                    className="object-cover rounded-2xl"
+                    loading='eager'
                   />
+                    </div>
                 </div>
 
                 {/* Content */}

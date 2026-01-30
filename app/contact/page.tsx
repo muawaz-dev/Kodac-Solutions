@@ -1,13 +1,20 @@
 // Contact Page - Contact Form and Information
 
 import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact Us - Kodac Solutions | Young, Passionate Digital Experts',
+  description: 'Meet the young, energetic team behind Kodac Solutions. We are passionate digital experts dedicated to delivering modern, innovative solutions for your business.',
+  keywords: 'contact us, digital agency team, graphic designers, seo, web developers, marketing experts, young professionals',
+};
+
 export default function ContactPage() {
 
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="pb-20 pt-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-360 mx-auto text-center">
           <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Get In <span className="text-red-500">Touch</span>
           </h1>
@@ -22,7 +29,7 @@ export default function ContactPage() {
       </div>
       {/* Contact Form and Info Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Contact Information */}
             <div className="App">

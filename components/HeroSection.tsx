@@ -7,11 +7,11 @@ import Image from 'next/image';
 export default function HeroSection() {
   return (
     <section className="relative pt-20 px-4 bg-no-repeat bg-[url('/test.png')] sm:px-6 lg:px-8 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-360 mx-auto">
         <div className="grid lg:grid-cols-2 gap-4">
           {/* Left Content */}
           <div className="space-y-8 pt-12 lg:pl-12">
-            <h1 className="text-5xl md:text-7xl text-black flex flex-col items-center xl:text-8xl font-bold leading-tight">
+            <h1 className="text-5xl md:text-6xl text-black flex flex-col items-center xl:text-8xl font-bold leading-tight">
               Development
               <br />
               <span className="bg-clip-text text-black font-extrabold">
@@ -25,7 +25,7 @@ export default function HeroSection() {
 
             <Link
               href="/contact"
-              className="inline-block bg-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="inline-block xl:ml-12 bg-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Hire Now
             </Link>
@@ -56,7 +56,7 @@ export default function HeroSection() {
                 alt="Digital Marketing Team"
                 fill
                 className="object-cover"
-                loading='eager'
+                priority
               />
             </div>
 
@@ -67,7 +67,7 @@ export default function HeroSection() {
                 alt="Development Team"
                 fill
                 className="object-cover"
-                loading='eager'
+                priority
               />
             </div>
           </div>

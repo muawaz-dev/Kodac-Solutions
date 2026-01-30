@@ -12,7 +12,7 @@ export default function ProductivityToolsPage() {
     { "name": "Capcut Pro", "logo": "/productivity-tools/capcut.png", "category": "Video-Editing", "price": "9.99$", "oldPrice": "12.99$" },
     { "name": "Chatgpt Plus", "logo": "/productivity-tools/chat-gpt.png", "category": "Automation", "price": "9.99$", "oldPrice": "20$" },
     { "name": "Sora 2", "logo": "/productivity-tools/sora-2.png", "category": "Automation", "price": "9.99$", "oldPrice": "34.90$" },
-    { "name": "Veo 3", "logo": "/productivity-tools/veo-3.png", "category": "Database", "price": "10.99$", "oldPrice": "30$" },
+    { "name": "Veo 3", "logo": "/productivity-tools/veo-3.png", "category": "Automation", "price": "10.99$", "oldPrice": "30$" },
     { "name": "Canva Pro", "logo": "/productivity-tools/canva.png", "category": "Graphic Design", "price": "10.99$", "oldPrice": "20$" },
     { "name": "Adobe Creative Cloud", "logo": "/productivity-tools/adobe.png", "category": "Creativity", "price": "35$", "oldPrice": "20$" },
     { "name": "Eleven Labs", "logo": "/productivity-tools/eleven-labs.png", "category": "Automation", "price": "15$", "oldPrice": "20$" },
@@ -73,7 +73,7 @@ export default function ProductivityToolsPage() {
   return (
     <main className="min-h-screen bg-white">
       <section className="pb-20 pt-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">Productivity Tools</div>
@@ -82,14 +82,24 @@ export default function ProductivityToolsPage() {
               <Link href="/contact" className="inline-block bg-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-600 transition-colors shadow-lg">Optimize Your Workflow</Link>
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
-              <Image src="/services/productivity-tools.webp" alt="Productivity Tools" fill className="object-cover" />
+              <Image
+                src="/services/productivity-tools.webp"
+                alt="Productivity Tools"
+                fill
+                className="object-cover"
+                fetchPriority='high'
+                loading='eager'
+                sizes="(max-width: 768px) 100vw,
+         (max-width: 1200px) 50vw,
+         1172px"
+              />
             </div>
           </div>
         </div>
       </section>
 
       <section className="pt-12 pb-4 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">What We Offer</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">We help businesses implement and optimize productivity tools that transform how teams work, communicate, and deliver results.We offer modern productivity tools at discounted prices.</p>
@@ -98,7 +108,7 @@ export default function ProductivityToolsPage() {
       </section>
 
       <section className="pb-20 pt-8 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="grid grid-cols-[repeat(auto-fit,minmax(15rem,1fr))] gap-4 justify-items-center">
             {tools.map((tool, i) => (
               <div key={i} className="bg-white rounded-xl w-60 p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center justify-center">
@@ -110,6 +120,7 @@ export default function ProductivityToolsPage() {
                       fill
                       className="object-contain"
                       loading='eager'
+                      sizes="36px"
                     />
                   </div>
                 </div>
@@ -127,7 +138,7 @@ export default function ProductivityToolsPage() {
       </section>
 
       <section className="pt-12 pb-4 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-360 mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Special Packs</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">Get specialized packs for your specific needs.</p>
@@ -136,7 +147,7 @@ export default function ProductivityToolsPage() {
       </section>
 
       <section className="pb-20 pt-8 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 py-10">
+        <div className="max-w-360 mx-auto px-6 py-10">
           <div className="grid grid-cols-[repeat(auto-fit,minmax(25rem,1fr))] gap-8">
             {packs.map((pack, index) => (
               <div
@@ -171,10 +182,11 @@ export default function ProductivityToolsPage() {
                           src={tool.logo}
                           fill
                           className="object-contain"
+                          sizes="20px"
                         />
                       </div>
                       <div>
-                      {tool.name}
+                        {tool.name}
                       </div>
                     </span>
                   ))}
