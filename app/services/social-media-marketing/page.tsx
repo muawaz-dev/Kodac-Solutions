@@ -40,7 +40,7 @@ export default function SocialMediaMarketingPage() {
             { title: 'Paid Advertising', desc: 'Targeted ad campaigns across social platforms to maximize visibility and conversions', icon: '/social-media/paid-advertising.png' }
           ].map((service, i) => (
             <div key={i} className="bg-white rounded-xl p-6 shadow-lg">
-              <div className="relative w-16 h-16 mb-2">
+              <div className="relative w-14 h-14 mb-2">
                 <Image
                   alt={service.title}
                   src={service.icon}

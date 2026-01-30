@@ -118,7 +118,7 @@ export default function GraphicDesigningPage() {
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow">
-                <div className="relative w-16 h-16 mb-2">
+                <div className="relative w-14 h-14 mb-2">
                   <Image
                     alt={service.title}
                     src={service.icon}

@@ -213,7 +213,7 @@ export default function WebDevelopmentPage() {
           <div className="grid lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow">
-                <div className="relative w-16 h-16 mb-2">
+                <div className="relative w-13.5 h-13.5 mb-2">
                   <Image
                     alt={service.title}
                     src={service.icon}

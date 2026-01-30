@@ -40,7 +40,7 @@ export default function AdCampaignsPage() {
             { title: 'TikTok & Emerging Platforms', features: ['Trend-based content', 'Influencer partnerships', 'Brand takeovers', 'Hashtag challenges', 'Performance analytics'], icon: '/ad-campaigns/tik-tok.png' },
           ].map((service, i) => (
             <div key={i} className="bg-white rounded-2xl p-8 shadow-lg">
-              <div className="relative w-14 h-14 mb-2">
+              <div className="relative w-12 h-12 mb-2">
                 <Image
                   alt={service.title}
                   src={service.icon}

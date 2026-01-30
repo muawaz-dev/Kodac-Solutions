@@ -103,7 +103,7 @@ export default function ProductivityToolsPage() {
             {tools.map((tool, i) => (
               <div key={i} className="bg-white rounded-xl w-60 p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center justify-center">
                 <div className="w-20 h-20 rounded-lg mb-3 flex items-center justify-center">
-                  <div className="relative w-16 h-16 mb-2">
+                  <div className="relative w-14 h-14 mb-2">
                     <Image
                       alt={tool.name}
                       src={tool.logo}
