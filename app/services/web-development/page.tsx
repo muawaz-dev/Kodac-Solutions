@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-
+import Hero from './Hero';
 export const metadata: Metadata = {
   title: 'Web Development Services - Kodac Solutions | Custom Websites & Web Apps',
   description: 'Professional web development services including Shopify, WordPress, and custom code solutions. We build websites that drive results.',
@@ -80,43 +80,7 @@ export default function WebDevelopmentPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="pb-20 pt-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
-        <div className="max-w-360 mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-block bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                Web Development
-              </div>
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                Professional Web Development Services
-              </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                We design websites that reflect your brand, engage visitors, and deliver exceptional performance to drive your business growth effectively.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-block bg-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-600 transition-colors shadow-lg"
-              >
-                Start Your Project
-              </Link>
-            </div>
-
-            <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src="/services/web-dev.jpg"
-                alt="Web Development"
-                fill
-                className="object-cover"
-                loading='eager'
-                fetchPriority='high'
-                sizes="(max-width: 1030px) 100vw,
-         (max-width: 1200px) 50vw,
-         700px"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+     <Hero/>
 
       {/* Our Approach */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">

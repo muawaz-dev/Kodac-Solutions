@@ -1,10 +1,12 @@
 // Hero Section Component - Main Banner with Call to Action
-
+"use client"
 
 import Link from 'next/link';
 import Image from 'next/image';
-
+import { useState } from 'react';
+import { motion } from 'framer-motion'
 export default function HeroSection() {
+  const [loaded, setLoaded] = useState(false)
   return (
     <section className="relative pt-20 px-4 bg-no-repeat bg-[url('/test.png')] sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-360 mx-auto">
@@ -12,11 +14,20 @@ export default function HeroSection() {
           {/* Left Content */}
           <div className="space-y-8 pt-12 lg:pl-12">
             <h1 className="text-5xl md:text-6xl text-black flex flex-col items-center xl:text-8xl font-bold leading-tight">
-              Development
-              <br />
-              <span className="bg-clip-text text-black font-extrabold">
+              <motion.span
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease:'easeInOut' }}
+              >
+                Development
+              </motion.span>
+              <motion.span
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 0.8, y: 0 }}
+                transition={{ duration: 1 ,delay:0.5, ease:'easeInOut' }}
+                className="bg-clip-text text-black font-extrabold">
                 Excellence
-              </span>
+              </motion.span>
             </h1>
 
             <p className="text-lg text-gray-600 max-w-xl">
@@ -35,7 +46,7 @@ export default function HeroSection() {
           <div className="relative h-[500px] lg:h-[600px]">
             {/* Decorative curved line */}
             <svg
-              className="absolute inset-0 w-full h-full"
+              className={`absolute ${loaded ? 'opacity-100' : 'opacity-0'} inset-0 w-full h-full`}
               viewBox="0 0 400 600"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -50,24 +61,27 @@ export default function HeroSection() {
             </svg>
 
             {/* Image 1 - Bottom Left */}
-            <div className="absolute bottom-32 sm:bottom-20 sm:left-0 left-[10%] w-64 h-64 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+            <div className="absolute bg-[#C7C0C0] bottom-32 sm:bottom-20 sm:left-0 left-[10%] w-64 h-64 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <Image
                 src="/hero-image-1.jpg"
                 alt="Digital Marketing Team"
                 fill
-                className="object-cover"
+                onLoadingComplete={() => setLoaded(true)}
+                className={`object-cover transition-opacity delay-600 duration-1500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
                 priority
+                sizes='256px'
               />
             </div>
 
             {/* Image 2 - Top Right */}
-            <div className="absolute hidden sm:block top-0 right-0 w-72 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+            <div className="absolute hidden bg-[#C7C0C0] sm:block top-0 right-0 w-72 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <Image
                 src="/hero-image-2.jpg"
                 alt="Development Team"
                 fill
-                className="object-cover"
+                className={`object-cover transition-opacity delay-100 duration-1500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
                 priority
+                sizes='288px'
               />
             </div>
           </div>

@@ -57,6 +57,9 @@ export default function DigitalExcellence() {
               fill
               className="object-cover"
               loading='eager'
+               sizes="(max-width: 1024px) 100vw,
+         (max-width: 1510px) 50vw,
+         696px"
             />
           </div>
         </div>

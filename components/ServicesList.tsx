@@ -70,7 +70,7 @@ export default function ServicesList() {
                       fill
                       className="object-cover"
                       loading='eager'
-                      sizes='78px'
+                      sizes='52px'
                     />
                   </div>
 
