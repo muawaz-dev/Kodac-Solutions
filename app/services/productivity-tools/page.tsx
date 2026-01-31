@@ -126,7 +126,7 @@ export default function ProductivityToolsPage() {
 
       <section className="pb-20 pt-8 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-360 mx-auto px-6 py-10">
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(25rem,1fr))] gap-8">
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
             {packs.map((pack, index) => (
               <div
                 key={index}
