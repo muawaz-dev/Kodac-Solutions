@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preload" href="https://calendly.com/muawaz8/30min" as="document" />
+        <link rel="preload" href="/test.png" as="image" />
         <link rel="icon" type="image/png" href="/logo-tab.png" />
       </head>
       <body className={inter.className}>

@@ -16,14 +16,14 @@ export default function Hero() {
                         <p className="text-xl text-gray-600 mb-8">Elevate your brand with consistent, engaging content and data-driven social media campaigns that connect with your audience and drive results.</p>
                         <Link href="/contact" className="inline-block bg-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-600 transition-colors shadow-lg">Start Your Campaign</Link>
                     </div>
-                    <div className="relative bg-black h-96 rounded-2xl overflow-hidden shadow-2xl">
+                    <div className={`relative bg-[#FCF3F6] h-96 rounded-2xl overflow-hidden duration-1500 transition-shadow ${loaded ? 'shadow-2xl' : 'shadow-none'}`}>
                         <Image
                             loading='eager'
                             src="/services/social-media.webp"
                             alt="Social Media Marketing"
                             fill
                             onLoadingComplete={() => setLoaded(true)}
-                            className={`object-cover transition-opacity duration-750 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+                            className={`object-cover transition-opacity duration-1500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
                             fetchPriority='high'
                             sizes="(max-width: 1030px) 100vw,
              (max-width: 1510px) 50vw,

@@ -28,13 +28,13 @@ export default function Hero() {
               </Link>
             </div>
 
-            <div className="relative bg-black h-96 rounded-2xl overflow-hidden shadow-2xl">
+            <div className={`relative bg-[#FCF3F6] h-96 rounded-2xl overflow-hidden duration-1500 transition-shadow ${loaded ? 'shadow-2xl' : 'shadow-none'}`}>
               <Image
                 src="/services/web-dev.jpg"
                 alt="Web Development"
                 fill
                 onLoadingComplete={()=>setLoaded(true)}
-                className={`object-cover transition-opacity duration-750 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+                className={`object-cover transition-opacity duration-1500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
                 loading='eager'
                 fetchPriority='high'
                 sizes="(max-width: 1030px) 100vw,

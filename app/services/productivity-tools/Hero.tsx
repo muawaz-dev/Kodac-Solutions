@@ -15,13 +15,13 @@ export default function Hero() {
                         <p className="text-xl text-gray-600 mb-8">Streamline your workflow with cutting-edge productivity tools and automation solutions that save time, reduce errors, and boost efficiency across your organization.</p>
                         <Link href="/contact" className="inline-block bg-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-600 transition-colors shadow-lg">Optimize Your Workflow</Link>
                     </div>
-                    <div className="relative bg-black h-96 rounded-2xl overflow-hidden shadow-2xl">
+                    <div className={`relative bg-[#FCF3F6] h-96 rounded-2xl overflow-hidden duration-1500 transition-shadow ${loaded ? 'shadow-2xl' : 'shadow-none'}`}>
                         <Image
                             src="/services/productivity-tools.webp"
                             alt="Productivity Tools"
                             fill
                             onLoadingComplete={() => setLoaded(true)}
-                            className={`object-cover transition-opacity duration-750 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+                            className={`object-cover transition-opacity duration-1500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
                             fetchPriority='high'
                             loading='eager'
                             sizes="(max-width: 1030px) 100vw,
