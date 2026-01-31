@@ -11,7 +11,6 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const pathname = usePathname();
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 15);
@@ -31,7 +30,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 bg-white ${isScrolled || window.scrollY ? 'bg-white shadow-lg' : 'sm:bg-transparent'
         }`}
     >
       <div className="mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
@@ -45,7 +44,7 @@ export default function Navbar() {
                 src="/logo.png"
                 alt="Kodac Solutions Logo"
                 fill
-                className="object-contain"
+                className={`object-contain`}
                 priority
               />
             </div>
