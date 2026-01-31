@@ -89,9 +89,9 @@ export default function ProductivityToolsPage() {
                 className="object-cover"
                 fetchPriority='high'
                 loading='eager'
-                sizes="(max-width: 768px) 100vw,
+                sizes="(max-width: 1030px) 100vw,
          (max-width: 1200px) 50vw,
-         1172px"
+         700px"
               />
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function ProductivityToolsPage() {
                       fill
                       className="object-contain"
                       loading='eager'
-                      sizes="36px"
+                      sizes="56px"
                     />
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export default function ProductivityToolsPage() {
                           src={tool.logo}
                           fill
                           className="object-contain"
-                          sizes="20px"
+                          sizes="16px"
                         />
                       </div>
                       <div>

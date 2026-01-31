@@ -109,9 +109,9 @@ export default function WebDevelopmentPage() {
                 className="object-cover"
                 loading='eager'
                 fetchPriority='high'
-                sizes="(max-width: 768px) 100vw,
+                sizes="(max-width: 1030px) 100vw,
          (max-width: 1200px) 50vw,
-         1172px"
+         700px"
               />
             </div>
           </div>
@@ -224,6 +224,7 @@ export default function WebDevelopmentPage() {
                     fill
                     className="object-contain"
                     loading='eager'
+                    sizes='54px'
                   />
                 </div>
 

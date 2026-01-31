@@ -27,9 +27,9 @@ export default function AdCampaignsPage() {
                 fill
                 className="object-cover"
                 fetchPriority='high'
-                sizes="(max-width: 768px) 100vw,
+                sizes="(max-width: 1030px) 100vw,
          (max-width: 1200px) 50vw,
-         1172px" />
+         700px" />
             </div>
           </div>
         </div>
@@ -55,6 +55,7 @@ export default function AdCampaignsPage() {
                   src={service.icon}
                   fill
                   className="object-contain"
+                  sizes='48px'
                 />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
