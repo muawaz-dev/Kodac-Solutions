@@ -8,7 +8,7 @@ export default function WhyChooseUs() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content - Decorative Card */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 rounded-3xl p-12 shadow-2xl">
+            <div className="bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 rounded-3xl p-8 shadow-2xl">
               <div className="sm:block hidden absolute top-0 left-4 w-28 h-28 bg-gradient-to-br from-blue-400 to-cyan-300 rounded-full opacity-50 -translate-x-8 -translate-y-8"></div>
               
               <div className="relative space-y-12">

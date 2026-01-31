@@ -26,7 +26,7 @@ export default function Hero() {
                 Start Your Project
               </Link>
             </div>
-            <div className={`relative bg-[#FCF3F6] h-96 rounded-2xl overflow-hidden duration-1500 transition-shadow ${loaded ? 'shadow-2xl' : 'shadow-none'}`}>
+            <div className={`relative bg-black h-96 rounded-2xl overflow-hidden duration-1500 transition-shadow ${loaded ? 'shadow-2xl' : 'shadow-none'}`}>
               <Image
                 loading='eager'
                 src="/services/graphic-designing.jpg"

@@ -10,9 +10,9 @@ export default function HeroSection() {
   return (
     <section className="relative pt-20 px-4 bg-no-repeat bg-[url('/test.png')] sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-360 mx-auto">
-        <div className="grid lg:grid-cols-2 gap-4">
+        <div className="grid lg:grid-cols-2 sm:gap-4">
           {/* Left Content */}
-          <div className="space-y-2 pt-12 lg:pl-12">
+          <div className="space-y-2 pt-12 sm:mt-0 mt-12 lg:pl-12">
             <h1 className="text-5xl md:text-6xl text-black flex flex-col items-center xl:text-8xl font-bold leading-tight">
               <motion.span
                 initial={{ opacity: 0, y: 30 }}
@@ -34,7 +34,7 @@ export default function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1}}
               transition={{ duration: 0.6, delay: 1, ease: 'easeInOut' }}
-              className='flex gap-4 flex-col items-start'
+              className='flex gap-8 flex-col items-start'
               >
               <p className="text-lg text-gray-600 max-w-xl">
                 Empowering businesses with expert website development, digital marketing, targeted ad campaigns, and social media strategies to dominate the digital landscape.
