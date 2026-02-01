@@ -15,9 +15,9 @@ export default function HeroSection() {
           <div className="space-y-2 pt-12 sm:mt-0 mt-12 lg:pl-12">
             <h1 className="text-5xl md:text-6xl text-black flex flex-col items-center xl:text-8xl font-bold leading-tight">
               <motion.span
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: 'easeInOut' }}
+                transition={{ duration: 0.7, ease: 'easeInOut' }}
               >
                 Development
               </motion.span>

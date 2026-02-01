@@ -7,14 +7,15 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [hasUserScrolled, setHasUserScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const pathname = usePathname();
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 15);
+      setHasUserScrolled(window.scrollY > 15);
     };
+    handleScroll() 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -30,7 +31,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-white ${isScrolled || window.scrollY ? 'bg-white shadow-lg' : 'sm:bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300 ${ hasUserScrolled ? 'bg-white shadow-lg' : 'sm:bg-transparent'
         }`}
     >
       <div className="mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
