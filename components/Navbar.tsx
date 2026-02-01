@@ -122,7 +122,7 @@ export default function Navbar() {
             className="lg:hidden p-2"
             onClick={() => {
               setIsMobileMenuOpen(!isMobileMenuOpen)
-              setIsScrolled(true)
+              setHasUserScrolled(true)
             }
             }
           >
