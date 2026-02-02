@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-
+import { motion } from 'framer-motion';
 export default function Navbar() {
   const [hasUserScrolled, setHasUserScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ export default function Navbar() {
     const handleScroll = () => {
       setHasUserScrolled(window.scrollY > 15);
     };
-    handleScroll() 
+    handleScroll()
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -30,8 +30,11 @@ export default function Navbar() {
   ];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300 ${ hasUserScrolled ? 'bg-white shadow-lg' : 'sm:bg-transparent'
+    <motion.nav
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.4, ease: 'easeInOut' }}
+      className={`fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300 ${hasUserScrolled ? 'bg-white shadow-lg' : 'sm:bg-transparent'
         }`}
     >
       <div className="mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
@@ -40,7 +43,8 @@ export default function Navbar() {
           <Link
             href="/"
             className="flex items-center">
-            <div className="w-[150px] h-[80px] relative">
+            <div
+              className="w-[150px] h-[80px] relative">
               <Image
                 src="/logo.png"
                 alt="Kodac Solutions Logo"
@@ -217,7 +221,7 @@ export default function Navbar() {
           </div>
         )}
       </div>
-    </nav>
+    </motion.nav>
   );
 }
 // End of Navbar Component
