@@ -43,8 +43,8 @@ export default function AboutPage() {
       name: 'Musawir Ali',
       role: 'Lead Generation Specialist',
       image: '/team/musawir.png',
-      expertise: 'Digital Marketing, SEO/SEM, Social Media Strategy, Analytics',
-      description: 'Musawir crafts data-driven marketing strategies that drive results. Her expertise in SEO, social media, and analytics helps businesses grow their online presence effectively.',
+      expertise: 'Digital Marketing, Lead Generation',
+      description: 'Musawir crafts data-driven marketing strategies that drive results. His expertise in lead generation helps businesses grow their online presence effectively.',
     },
   ];
 
