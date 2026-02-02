@@ -30,10 +30,7 @@ export default function Navbar() {
   ];
 
   return (
-    <motion.nav
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.4, ease: 'easeInOut' }}
+    <nav
       className={`fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300 ${hasUserScrolled ? 'bg-white shadow-lg' : 'sm:bg-transparent'
         }`}
     >
@@ -43,7 +40,10 @@ export default function Navbar() {
           <Link
             href="/"
             className="flex items-center">
-            <div
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, ease: 'easeInOut' }}
               className="w-[150px] h-[80px] relative">
               <Image
                 src="/logo.png"
@@ -52,11 +52,15 @@ export default function Navbar() {
                 className={`object-contain`}
                 priority
               />
-            </div>
+            </motion.div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: 'easeInOut' }}
+            className="hidden lg:flex items-center space-x-8">
             <Link
               href="/"
               className={`text-base font-medium transition-colors ${pathname === '/' ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
@@ -118,10 +122,13 @@ export default function Navbar() {
             >
               Contact Us
             </Link>
-          </div>
+          </motion.div>
 
           {/* Mobile Menu Button */}
-          <button
+          <motion.button
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: 'easeInOut' }}
             aria-label='menu'
             className="lg:hidden p-2"
             onClick={() => {
@@ -142,7 +149,7 @@ export default function Navbar() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
-          </button>
+          </motion.button>
         </div>
 
         {/* Mobile Menu */}
@@ -221,7 +228,7 @@ export default function Navbar() {
           </div>
         )}
       </div>
-    </motion.nav>
+    </nav>
   );
 }
 // End of Navbar Component

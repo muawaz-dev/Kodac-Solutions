@@ -1,6 +1,7 @@
 // About Page - Company Information and Full Team Details
 import Image from 'next/image';
 import type { Metadata } from 'next';
+import OurStory from './OurStory';
 
 export const metadata: Metadata = {
   title: 'About Us - Kodac Solutions | Young, Passionate Digital Experts',
@@ -62,30 +63,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-360 mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-4xl font-bold text-gray-900">Our Story</h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Kodac Solutions is a new agency born from a passion for digital excellence. We may be new, but our team brings together years of combined expertise and a fresh, modern perspective that sets us apart.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                As a young and energetic team, we understand the digital landscape from a contemporary viewpoint. We're not just keeping up with trends – we're setting them. Our passion drives us to deliver exceptional results that exceed expectations.
-              </p>
-            </div>
-
-            <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src="/about-team.jpg"
-                alt="Our Team"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <OurStory/> 
 
       {/* What Makes Us Different */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
