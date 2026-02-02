@@ -75,7 +75,7 @@ export default function ProductivityToolsPage() {
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <Hero />
-      
+
       <section className="pt-12 pb-4 px-4 sm:px-6 lg:px-8">
         <div className="max-w-360 mx-auto">
           <div className="text-center mb-16">
@@ -124,7 +124,8 @@ export default function ProductivityToolsPage() {
         </div>
       </section>
 
-      <section className="pb-20 pt-8 px-4 sm:px-6 lg:px-8 bg-gray-50">
+
+      <section className="pb-16 pt-8 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-360 mx-auto px-6 py-10">
           <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
             {packs.map((pack, index) => (
@@ -177,8 +178,8 @@ export default function ProductivityToolsPage() {
 
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-500 to-purple-600">
         <div className="max-w-4xl mx-auto text-center text-white">
-          <h2 className="text-4xl font-bold mb-6">Ready to Boost Your Productivity?</h2>
-          <p className="text-xl mb-8">Let's optimize your workflow with the right tools and automation.</p>
+          <h2 className="text-4xl font-bold mb-6">Buy now!</h2>
+          <p className="text-xl mb-8">To get access to the tools, email us or contact us through our phone number.</p>
           <Link href="/contact" className="inline-block bg-white text-red-500 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">Get Started</Link>
         </div>
       </section>
