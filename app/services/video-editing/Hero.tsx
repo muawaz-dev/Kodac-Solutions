@@ -14,7 +14,7 @@ export default function Hero() {
                             Video Editing
                         </div>
                         <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                            Professional Video Editing Services
+                            Video Editing Services
                         </h1>
                         <p className="text-xl text-gray-600 mb-8">
                             Transform raw footage into captivating stories with professional video editing that enhances your brand message and engages your audience.

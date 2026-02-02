@@ -27,23 +27,23 @@ export default function AboutPage() {
     {
       name: 'Irbaz Hassan',
       role: 'Creative Director',
-      image: '/team/ryan.jpg',
+      image: '/team/irbaz.png',
       expertise: 'Creative Strategy, Brand Development, Design Leadership',
       description: 'Irbaz brings creative vision to life, leading our design team to create stunning visual identities that resonate with audiences and elevate brands.',
     },
     {
       name: 'Mayer Shiraz',
       role: 'Graphic Designer',
-      image: '/team/mayer.jpg',
+      image: '/team/mayer.png',
       expertise: 'Brand Identity, Visual Design, Typography, Creative Illustration',
       description: 'Mayer transforms concepts into compelling visuals that elevate brand presence and communication. His strong eye for detail and mastery of design tools ensure every project delivers creativity, clarity, and impact.',
     },
     {
       name: 'Musawir Ali',
       role: 'Lead Generation Specialist',
-      image: '/team/alex.jpg',
+      image: '/team/musawir.png',
       expertise: 'Digital Marketing, SEO/SEM, Social Media Strategy, Analytics',
-      description: 'Alex crafts data-driven marketing strategies that drive results. Her expertise in SEO, social media, and analytics helps businesses grow their online presence effectively.',
+      description: 'Musawir crafts data-driven marketing strategies that drive results. Her expertise in SEO, social media, and analytics helps businesses grow their online presence effectively.',
     },
   ];
 

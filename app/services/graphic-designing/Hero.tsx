@@ -14,7 +14,7 @@ export default function Hero() {
                 Graphic Designing
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                Professional Graphic Design Services
+                Graphic Design Services
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 Create stunning visual identities with creative graphic design solutions that make your brand stand out and leave a lasting impression.

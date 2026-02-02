@@ -74,7 +74,7 @@ const teamMembers = [
         {/* View All Button */}
         <div className="text-center mt-12">
           <Link
-            href="/about#team"
+            href="/about"
             className="inline-flex items-center space-x-2 text-red-500 font-semibold hover:text-red-600 transition-colors"
           >
             <span>View Full Team Details</span>

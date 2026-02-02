@@ -15,7 +15,7 @@ export default function Hero() {
                 Web Development
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                Professional Web Development Services
+                Web Development Services
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 We design websites that reflect your brand, engage visitors, and deliver exceptional performance to drive your business growth effectively.

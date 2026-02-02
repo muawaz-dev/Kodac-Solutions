@@ -25,7 +25,7 @@ export default function Footer() {
             {/* Social Links */}
             <div className="flex space-x-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/kodacsolutions/"
                 target="_blank"
                 aria-label="Visit our Facebook page"
                 rel="noopener noreferrer"
@@ -36,18 +36,22 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://twitter.com"
+                href="https://www.instagram.com/kodacsolutions/"
                 target="_blank"
-                aria-label="Visit our Twitter page"
+                aria-label="Visit our Instagram page"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors"
               >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5.25-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z" />
                 </svg>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/kodac-solutions/"
                 target="_blank"
                 aria-label="Visit our LinkedIn page"
                 rel="noopener noreferrer"
@@ -69,9 +73,14 @@ export default function Footer() {
                 <p>USA</p>
               </div>
               <div>
-                <p className="font-semibold text-white mb-1">EMAIL:</p>
-                <a href="mailto:team@kodacsolutions.com" className="hover:text-red-500 transition-colors">
+                <p className="font-semibold text-white mb-1">EMAILS:</p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=team@kodacsolutions.com" target="_blank" className="hover:text-red-500 transition-colors">
                   team@kodacsolutions.com
+                </a>
+              </div>
+              <div>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@kodacsolutions.com" target="_blank" className="hover:text-red-500 transition-colors">
+                  sales@kodacsolutions.com
                 </a>
               </div>
               <div>

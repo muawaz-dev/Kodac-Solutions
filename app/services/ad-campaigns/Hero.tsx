@@ -12,7 +12,7 @@ export default function Hero() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <div className="inline-block bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">Ad Campaigns</div>
-                  <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">Professional Ad Campaign Management</h1>
+                  <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">Ad Campaign Management</h1>
                   <p className="text-xl text-gray-600 mb-8">Maximize your ROI with targeted advertising campaigns on Meta, Google, and other platforms that reach the right audience and convert viewers into customers.</p>
                   <Link href="/contact" className="inline-block bg-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-600 transition-colors shadow-lg">Launch Your Campaign</Link>
                 </div>

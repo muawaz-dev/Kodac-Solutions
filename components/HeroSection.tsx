@@ -10,10 +10,10 @@ export default function HeroSection() {
   return (
     <section className="relative pt-20 px-4 bg-no-repeat bg-[url('/test.png')] sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-360 mx-auto">
-        <div className="grid lg:grid-cols-2 sm:gap-4">
+        <div className="grid lg:grid-cols-2 sm:gap-4 xl:gap-20">
           {/* Left Content */}
-          <div className="space-y-2 pt-12 sm:mt-0 mt-12 lg:pl-12">
-            <h1 className="text-5xl md:text-6xl text-black flex flex-col items-center xl:text-8xl font-bold leading-tight">
+          <div className="space-y-2 pt-12 sm:mt-0 mt-12 lg:ml-12 lg:pl-8 xl:pl-2">
+            <h1 className="text-5xl md:text-[90px] text-black flex flex-col items-center xl:text-8xl font-bold leading-tight">
               <motion.span
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ export default function HeroSection() {
 
               <Link
                 href="/contact"
-                className="inline-block xl:ml-12 bg-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="inline-block lg:ml-8 xl:ml-12 bg-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 Hire Now
               </Link>
