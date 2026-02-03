@@ -8,12 +8,20 @@ import { motion } from 'framer-motion'
 export default function HeroSection() {
   const [loaded, setLoaded] = useState(false)
   return (
-    <section className="relative pt-20 px-4 bg-no-repeat bg-[url('/test.png')] sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, ease: 'easeInOut' }}
+        className="absolute inset-0 h-full bg-no-repeat bg-[url('/test.png')]"
+      >
+
+      </motion.div>
       <div className="max-w-360 mx-auto">
         <div className="grid lg:grid-cols-2 sm:gap-4">
           {/* Left Content */}
           <div className="space-y-2 pt-12 sm:mt-0 mt-12 lg:pl-12">
-            <h1 className="text-5xl md:text-6xl text-black flex flex-col items-center xl:text-8xl font-bold leading-tight">
+            <h1 className="text-5xl relative md:text-6xl text-black flex flex-col items-center xl:text-8xl font-bold leading-tight">
               <motion.span
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -32,10 +40,10 @@ export default function HeroSection() {
 
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1}}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 1, ease: 'easeInOut' }}
-              className='flex gap-8 flex-col items-start'
-              >
+              className='flex relative z-10 gap-8 flex-col items-start'
+            >
               <p className="text-lg text-gray-600 max-w-xl">
                 Empowering businesses with expert website development, digital marketing, targeted ad campaigns, and social media strategies to dominate the digital landscape.
               </p>
@@ -69,7 +77,11 @@ export default function HeroSection() {
             </svg>
 
             {/* Image 1 - Bottom Left */}
-            <div className="absolute bg-[#C7C0C0] bottom-32 sm:bottom-20 sm:left-0 left-[10%] w-64 h-64 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.4, ease: 'easeInOut' }}
+              className="absolute bg-[#C7C0C0] bottom-32 sm:bottom-20 sm:left-0 left-[10%] w-64 h-64 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <Image
                 src="/hero-image-1.jpg"
                 alt="Digital Marketing Team"
@@ -79,10 +91,14 @@ export default function HeroSection() {
                 priority
                 sizes='256px'
               />
-            </div>
+            </motion.div>
 
             {/* Image 2 - Top Right */}
-            <div className="absolute hidden bg-[#C7C0C0] sm:block top-0 right-0 w-72 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.4, ease: 'easeInOut' }}
+              className="absolute hidden bg-[#C7C0C0] sm:block top-0 right-0 w-72 h-72 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <Image
                 src="/hero-image-2.jpg"
                 alt="Development Team"
@@ -91,7 +107,7 @@ export default function HeroSection() {
                 priority
                 sizes='288px'
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
