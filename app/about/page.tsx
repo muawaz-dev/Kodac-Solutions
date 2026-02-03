@@ -12,6 +12,13 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const teamMembers = [
     {
+      name: 'Alex Johnson',
+      role: 'Owner',
+      image: '/team/alex.png',
+      expertise: 'Investment, Financial Oversight, Long-term Vision',
+      description: 'As the principal investor behind our agency, Alex provides the financial foundation and long-term vision that fuels our growth. His commitment ensures the team has the resources and stability to innovate and deliver exceptional digital services.',
+    },
+    {
       name: 'Frasat Ahmad',
       role: 'CEO',
       image: '/team/frasat.png',
@@ -26,7 +33,7 @@ export default function AboutPage() {
       description: 'Muawaz is a versatile full-stack developer who bridges the gap between frontend design and backend functionality, he delivers scalable and efficient solutions.',
     },
     {
-      name: 'Irbaz Hassan',
+      name: 'Irbaz Hasan',
       role: 'Creative Director',
       image: '/team/irbaz.png',
       expertise: 'Creative Strategy, Brand Development, Design Leadership',
@@ -63,7 +70,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story Section */}
-      <OurStory/> 
+      <OurStory />
 
       {/* What Makes Us Different */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
@@ -135,15 +142,15 @@ export default function AboutPage() {
                 {/* Image */}
                 <div className={`flex justify-center bg-gradient-to-r from-gray-700 to-gray-300 items-center h-96 rounded-2xl overflow-hidden shadow-2xl ${index % 2 === 1 ? 'lg:col-start-2' : ''
                   }`}>
-                    <div className='h-72 w-72 relative bg-[#F7F7F7] rounded-2xl'>
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover rounded-2xl"
-                    loading='eager'
-                  />
-                    </div>
+                  <div className='h-72 w-72 relative bg-[#F7F7F7] rounded-2xl'>
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover rounded-2xl"
+                      loading='eager'
+                    />
+                  </div>
                 </div>
 
                 {/* Content */}

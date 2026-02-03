@@ -1,7 +1,6 @@
 // Team Preview Component - Brief Team Member Showcase
 
 
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function TeamPreview() {
@@ -17,7 +16,7 @@ const teamMembers = [
     description: 'Muawaz bridges frontend design and backend functionality, delivering scalable and efficient solutions.',
   },
   {
-    name: 'Irbaz Hassan',
+    name: 'Irbaz Hasan',
     role: 'Creative Director',
     description: 'Irbaz brings creative vision to life, guiding our design team to create stunning visual identities.',
   },
