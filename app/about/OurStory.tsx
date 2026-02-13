@@ -7,7 +7,7 @@ export default function OurStory() {
   return (
      <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-360 mx-auto">
-          <div className="grid lg:grid-cols-2 lg:gap-0 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 lg:gap-4 justify-items-center gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-4xl font-bold text-gray-900">Our Story</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
@@ -18,7 +18,10 @@ export default function OurStory() {
               </p>
             </div>
 
-            <div className={`bg-black relative w-[283px] h-[200px] rounded-2xl overflow-hidden mx-auto shadow-2xl `}>
+            <div
+            className='w-full h-full flex justify-center items-center bg-gradient-to-br from-[#123A87] to-[#921B3C] rounded-2xl p-1'
+            >
+            <div className={`relative w-[283px] h-[200px] rounded-2xl overflow-hidden mx-auto`}>
               <Image
                 src="/kodac-banner.png"
                 alt="Kodac Solutions"
@@ -27,6 +30,7 @@ export default function OurStory() {
                 onLoadingComplete={()=>setLoaded(true)}
                 className={`object-cover ${loaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`}
               />
+            </div>
             </div>
           </div>
         </div>

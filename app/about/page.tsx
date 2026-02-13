@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import OurStory from './OurStory';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'About Us - Kodac Solutions | Young, Passionate Digital Experts',
@@ -13,14 +14,14 @@ export default function AboutPage() {
   const teamMembers = [
     {
       name: 'Alex Johnson',
-      role: 'Owner',
+      role: 'CEO',
       image: '/team/alex.png',
       expertise: 'Investment, Financial Oversight, Long-term Vision',
       description: 'As the principal investor behind our agency, Alex provides the financial foundation and long-term vision that fuels our growth. His commitment ensures the team has the resources and stability to innovate and deliver exceptional digital services.',
     },
     {
       name: 'Frasat Ahmad',
-      role: 'CEO',
+      role: 'Project Manager',
       image: '/team/frasat.png',
       expertise: 'Strategic Planning, Business Development, Client Relations',
       description: 'With a vision to revolutionize digital services, Frasat leads our team with passion and innovative thinking. His expertise in strategic planning ensures every project aligns with client goals.',
@@ -61,7 +62,7 @@ export default function AboutPage() {
       <section className="pb-20 pt-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-purple-50">
         <div className="max-w-360 mx-auto text-center">
           <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            About <span className="text-red-500">Kodac Solutions</span>
+            About <span className="bg-gradient-to-r from-[#F33641] to-[#9C45FE] bg-clip-text text-transparent">Kodac</span> <span className='text-red-500'>Solutions</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             A young, energetic team of passionate digital experts dedicated to transforming businesses through modern, innovative solutions.
@@ -179,12 +180,12 @@ export default function AboutPage() {
           <p className="text-xl mb-8">
             Let's discuss how our passionate team can help transform your digital presence.
           </p>
-          <a
+          <Link
             href="/contact"
             className="inline-block bg-white text-red-500 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
           >
             Get In Touch
-          </a>
+          </Link>
         </div>
       </section>
     </main>
