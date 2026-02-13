@@ -7,7 +7,7 @@ export default function TeamPreview() {
 const teamMembers = [
   {
     name: 'Frasat Ahmad',
-    role: 'CEO',
+    role: 'Project Manager',
     description: 'Frasat leads our team with passion and innovative thinking. His strategic planning ensures projects align with client goals.',
   },
   {
