@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  Kodac Solutions
 
-## Getting Started
+##  Overview
+This repository contains the source code for our Digital Agency website.  
+We provide creative and technical solutions to help businesses grow online, offering services in web development, video editing, graphic design, social media management, and ad campaigns.
 
-First, run the development server:
+##  Services
+- **Web Development**  
+  Modern, responsive websites and e-commerce platforms tailored to your brand.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Video Editing**  
+  Professional editing for promotional videos, social media content, and corporate storytelling.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Graphic Designing**  
+  Branding assets, marketing materials, and eye-catching visuals.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Social Media Management (SSM)**  
+  Strategy, content creation, and community engagement to boost your online presence.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Ad Campaigns**  
+  Targeted digital advertising across platforms to maximize reach and ROI.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+##  Tech Stack
+- **Frontend:** HTML, CSS, JavaScript, React, Next.js  
+- **Backend:** Node.js, Express, MongoDB  
+- **Design Tools:** Adobe Creative Suite, Figma  
+- **Marketing Tools:** Google Ads, Meta Ads Manager  

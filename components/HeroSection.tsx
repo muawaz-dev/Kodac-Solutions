@@ -86,7 +86,7 @@ export default function HeroSection() {
                 src="/hero-image-1.jpg"
                 alt="Digital Marketing Team"
                 fill
-                onLoadingComplete={() => setLoaded(true)}
+                onLoad={() => setLoaded(true)}
                 className={`object-cover transition-opacity delay-400 duration-1500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
                 priority
                 sizes='256px'
