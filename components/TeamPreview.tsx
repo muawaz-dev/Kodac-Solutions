@@ -5,11 +5,11 @@ import Link from 'next/link';
 
 export default function TeamPreview() {
 const teamMembers = [
-  {
-    name: 'Frasat Ahmad',
-    role: 'Project Manager',
-    description: 'Frasat leads our team with passion and innovative thinking. His strategic planning ensures projects align with client goals.',
-  },
+  // {
+  //   name: 'Frasat Ahmad',
+  //   role: 'Project Manager',
+  //   description: 'Frasat leads our team with passion and innovative thinking. His strategic planning ensures projects align with client goals.',
+  // },
   {
     name: 'Muawaz Ahmad',
     role: 'Full-Stack Developer',
