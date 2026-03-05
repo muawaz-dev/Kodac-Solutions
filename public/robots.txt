@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kodacsolutions.com
+
+# Sitemaps
+Sitemap: https://kodacsolutions.com/sitemap.xml

@@ -19,13 +19,13 @@ export default function AboutPage() {
       expertise: 'Investment, Financial Oversight, Long-term Vision',
       description: 'As the principal investor behind our agency, Alex provides the financial foundation and long-term vision that fuels our growth. His commitment ensures the team has the resources and stability to innovate and deliver exceptional digital services.',
     },
-    {
-      name: 'Frasat Ahmad',
-      role: 'Project Manager',
-      image: '/team/frasat.png',
-      expertise: 'Strategic Planning, Business Development, Client Relations',
-      description: 'With a vision to revolutionize digital services, Frasat leads our team with passion and innovative thinking. His expertise in strategic planning ensures every project aligns with client goals.',
-    },
+    // {
+    //   name: 'Frasat Ahmad',
+    //   role: 'Project Manager',
+    //   image: '/team/frasat.png',
+    //   expertise: 'Strategic Planning, Business Development, Client Relations',
+    //   description: 'With a vision to revolutionize digital services, Frasat leads our team with passion and innovative thinking. His expertise in strategic planning ensures every project aligns with client goals.',
+    // },
     {
       name: 'Muawaz Ahmad',
       role: 'Full-Stack Developer',
