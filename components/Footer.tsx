@@ -70,7 +70,7 @@ export default function Footer() {
             <div className="space-y-3 text-gray-300">
               <div>
                 <p className="font-semibold text-white mb-1">ADDRESS:</p>
-                <p>USA</p>
+                <p>8040 Rolling Rd Springfield Virginia 22153</p>
               </div>
               <div>
                 <p className="font-semibold text-white mb-1">EMAILS:</p>

@@ -55,7 +55,7 @@ export default function ContactPage() {
                     </div>
 
                     <div className="mt-6 text-center text-gray-600">
-                      <p>Can't find a suitable time? Call us at <strong className="text-blue-600">(555) 123-4567</strong></p>
+                      <p>Can't find a suitable time? Call us at <strong className="text-blue-600">+1 480-450-1891</strong></p>
                     </div>
                   </div>
                 </div>
@@ -81,7 +81,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900 mb-1">Address</h3>
-                    <p className="text-gray-600">USA</p>
+                    <p className="text-gray-600">8040 Rolling Rd Springfield Virginia 22153</p>
                   </div>
                 </div>
 
