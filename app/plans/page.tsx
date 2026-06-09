@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from 'framer-motion';
+import { motion, easeOut } from 'framer-motion';
 import { Check, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
@@ -73,7 +73,7 @@ export default function PlansPage() {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: 'easeOut'
+        ease: easeOut
       }
     }
   };

@@ -1,0 +1,33 @@
+# Kodac Solutions
+Kodac Solutions is a full-service digital agency specializing in scaling businesses through high-performance marketing and development services.
+
+## Core Services
+
+### SEO (Search Engine Optimization)
+We help businesses rank on the first page of search results.
+- [SEO Services](/services/seo): Comprehensive strategy including technical audits, keyword research, link building, and content optimization.
+
+### Social Media Management
+Build and engage your audience across platforms.
+- Strategy development, content creation, community management, and growth analytics for LinkedIn, Instagram, TikTok, and Facebook.
+
+### Video Editing
+Professional, high-conversion video production.
+- Services include editing for promotional ads, social media shorts, long-form content, and corporate branding.
+
+### Web Development
+Custom, high-speed, and responsive web solutions.
+- Specialization in Next.js, React, and TypeScript. We build performant, SEO-friendly websites tailored to business goals.
+
+### Ads Campaigns
+Data-driven paid media strategies.
+- Management of Google Ads and Meta Ads to ensure high ROI and lead generation.
+
+## Why Choose Us?
+- Data-driven strategies tailored to your niche.
+- Focus on conversion rate optimization (CRO) and ROI.
+- Technical expertise combined with creative design.
+
+## Contact & Pricing
+- [Plans & Pricing](/plans): View our service packages.
+- [Contact Us](/contact): Get in touch for a custom consultation.
