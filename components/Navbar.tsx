@@ -23,6 +23,7 @@ export default function Navbar() {
   const services = [
     { name: 'Web Development', href: '/services/web-development' },
     { name: 'Video Editing', href: '/services/video-editing' },
+    { name: 'SEO', href: '/services/seo' },
     { name: 'Graphic Designing', href: '/services/graphic-designing' },
     { name: 'Social Media Marketing', href: '/services/social-media-marketing' },
     { name: 'Ad Campaigns', href: '/services/ad-campaigns' },
@@ -107,6 +108,13 @@ export default function Navbar() {
               )}
             </div>
 
+            <Link
+              href="/plans"
+              className={`text-base font-medium transition-colors ${pathname === '/plans' ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
+                }`}
+            >
+              Plans
+            </Link>
             <Link
               href="/about"
               className={`text-base font-medium transition-colors ${pathname === '/about' ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
