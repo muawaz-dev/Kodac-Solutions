@@ -210,7 +210,13 @@ export default function Navbar() {
                   </div>
                 )}
               </div>
-
+              <Link
+                href="/plans"
+                className={`text-base font-medium transition-colors ${pathname === '/plans' ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
+                  }`}
+              >
+                Plans
+              </Link>
               <Link
                 href="/about"
                 className="text-base font-medium text-gray-700 hover:text-red-500"
