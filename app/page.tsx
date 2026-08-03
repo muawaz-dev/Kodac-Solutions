@@ -6,7 +6,7 @@ import ServicesCarousel from '@/components/ServicesCarousel';
 import DigitalExcellence from '@/components/DigitalExcellence';
 import StrategicProcesses from '@/components/StrategicProcesses';
 import WhyChooseUs from '@/components/WhyChooseUs';
-import TeamPreview from '@/components/TeamPreview';
+import WorkPreview from '@/components/WorkPreview';
 import Testimonials from '@/components/Testimonials';
 import Newsletter from '@/components/Newsletter';
 import ServicesList from '@/components/ServicesList';
@@ -29,8 +29,8 @@ export default function Home() {
       {/* Why Choose Us Section */}
       <WhyChooseUs />
 
-      {/* Team Preview Section */}
-      <TeamPreview />
+      {/* Recent Work Section */}
+      <WorkPreview />
 
       {/* Testimonials Section */}
       <Testimonials />

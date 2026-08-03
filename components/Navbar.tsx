@@ -116,6 +116,13 @@ export default function Navbar() {
               Plans
             </Link>
             <Link
+              href="/portfolio"
+              className={`text-base font-medium transition-colors ${pathname === '/portfolio' ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
+                }`}
+            >
+              Portfolio
+            </Link>
+            <Link
               href="/about"
               className={`text-base font-medium transition-colors ${pathname === '/about' ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
                 }`}
@@ -216,6 +223,16 @@ export default function Navbar() {
                   }`}
               >
                 Plans
+              </Link>
+              <Link
+                href="/portfolio"
+                className={`text-base font-medium transition-colors ${pathname === '/portfolio' ? 'text-red-500' : 'text-gray-700 hover:text-red-500'
+                  }`}
+                onClick={() => {
+                  setIsMobileMenuOpen(!isMobileMenuOpen)
+                }}
+              >
+                Portfolio
               </Link>
               <Link
                 href="/about"

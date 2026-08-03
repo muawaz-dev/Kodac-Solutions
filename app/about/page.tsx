@@ -1,7 +1,7 @@
 // About Page - Company Information and Full Team Details
-import Image from 'next/image';
 import type { Metadata } from 'next';
 import OurStory from './OurStory';
+import WorkPreview from '@/components/WorkPreview';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -11,51 +11,6 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const teamMembers = [
-    {
-      name: 'Alex Johnson',
-      role: 'CEO',
-      image: '/team/alex.png',
-      expertise: 'Investment, Financial Oversight, Long-term Vision',
-      description: 'As the principal investor behind our agency, Alex provides the financial foundation and long-term vision that fuels our growth. His commitment ensures the team has the resources and stability to innovate and deliver exceptional digital services.',
-    },
-    // {
-    //   name: 'Frasat Ahmad',
-    //   role: 'Project Manager',
-    //   image: '/team/frasat.png',
-    //   expertise: 'Strategic Planning, Business Development, Client Relations',
-    //   description: 'With a vision to revolutionize digital services, Frasat leads our team with passion and innovative thinking. His expertise in strategic planning ensures every project aligns with client goals.',
-    // },
-    {
-      name: 'Muawaz Ahmad',
-      role: 'Full-Stack Developer',
-      image: '/team/muawaz.png',
-      expertise: 'Frontend & Backend Development, API Integration, No Code Development',
-      description: 'Muawaz is a versatile full-stack developer who bridges the gap between frontend design and backend functionality, he delivers scalable and efficient solutions.',
-    },
-    {
-      name: 'Irbaz Hasan',
-      role: 'Creative Director',
-      image: '/team/irbaz.png',
-      expertise: 'Creative Strategy, Brand Development, Design Leadership',
-      description: 'Irbaz brings creative vision to life, leading our design team to create stunning visual identities that resonate with audiences and elevate brands.',
-    },
-    {
-      name: 'Mayer Shiraz',
-      role: 'Graphic Designer',
-      image: '/team/mayer.png',
-      expertise: 'Brand Identity, Visual Design, Typography, Creative Illustration',
-      description: 'Mayer transforms concepts into compelling visuals that elevate brand presence and communication. His strong eye for detail and mastery of design tools ensure every project delivers creativity, clarity, and impact.',
-    },
-    {
-      name: 'Musawir Ali',
-      role: 'Lead Generation Specialist',
-      image: '/team/musawir.png',
-      expertise: 'Digital Marketing, Lead Generation',
-      description: 'Musawir crafts data-driven marketing strategies that drive results. His expertise in lead generation helps businesses grow their online presence effectively.',
-    },
-  ];
-
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -123,55 +78,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Full Team Section */}
-      <section id="team" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-360 mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
-            <p className="text-xl text-gray-600">
-              The passionate experts behind your digital success
-            </p>
-          </div>
-
-          <div className="space-y-16">
-            {teamMembers.map((member, index) => (
-              <div
-                key={index}
-                className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''
-                  }`}
-              >
-                {/* Image */}
-                <div className={`flex justify-center bg-gradient-to-r from-gray-700 to-gray-300 items-center h-96 rounded-2xl overflow-hidden shadow-2xl ${index % 2 === 1 ? 'lg:col-start-2' : ''
-                  }`}>
-                  <div className='h-72 w-72 relative bg-[#F7F7F7] rounded-2xl'>
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover rounded-2xl"
-                      loading='eager'
-                    />
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className={index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}>
-                  <div className="inline-block bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                    {member.role}
-                  </div>
-                  <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                    {member.name}
-                  </h3>
-                  <p className="text-red-500 font-semibold mb-4">{member.expertise}</p>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    {member.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Recent Work Section */}
+      <WorkPreview />
 
       {/* Call to Action */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-500 to-purple-600">
