@@ -55,7 +55,7 @@ export default function ContactPage() {
                     </div>
 
                     <div className="mt-6 text-center text-gray-600">
-                      <p>Can't find a suitable time? Call us at <strong className="text-blue-600">+1 480-450-1891</strong></p>
+                      <p>Can't find a suitable time? Call us at <strong className="text-blue-600">+1 571-503-6012</strong></p>
                     </div>
                   </div>
                 </div>
@@ -109,8 +109,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900 mb-1">Phone</h3>
-                    <a href="tel:+14804501891" className="text-red-500 hover:text-red-600">
-                      +1 480-450-1891
+                    <a href="tel:+15715036012" className="text-red-500 hover:text-red-600">
+                      +1 571-503-6012
                     </a>
                   </div>
                 </div>
